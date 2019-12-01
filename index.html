@@ -1,0 +1,3364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- test -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CDN BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- CDN font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+	<!-- Google font -->
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/prism.css">
+	<!-- <link rel="stylesheet" href="js/highlight/styles/a11y-dark.css"> -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Aide mémoire formation</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="row no-gutter">
+				<div class="col-12 col0pad bg-perso hauteur-100 w-100 d-flex align-items-center justify-content-center">
+					<h4 class="text-white center text-center h4-size">FICHES COURS JS PHP - LA PHILOMATIQUE</h4>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="container-fluid bg-gris">
+	<div class="resp-container">
+		<div class="row no-gutter">
+			<div class="col-12 col0pad">
+				<div class="accordion" id="accordion-javascript">
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="generalites">
+							<h2 class="mb-0 fz-titre-resp fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+									Généralités
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapse1" class="collapse" aria-labelledby="generalites"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Clear de la console</span>
+								<pre class="mb_0"><code class="language-js">console.clear();</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Pour écrire dans le html (et pas
+									dans la console)</span>
+								<pre class="mb_0"><code class="language-js">document.write('toto');</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <strong>Instanciation</strong> :
+									création d'un objet à partir d'une classe</span><br><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <strong>Objet : </strong></span>
+								<ul class="ml-2">
+									<li><em>Définition</em> : ensemble de propriétés (cf. les variables en procédural) et de méthodes (cf. des fonctions) qui vont caractériser un pgm</li>
+									<li><em>Notation</em> : par convention, avec une majuscule</li>
+								</ul>
+
+								<span class="ml-2 mb_0"><i class="fas fa-caret-right"></i> La boîte de dialogue prompt()
+									prend 2 paramètres : <b>prompt(para1, para2)</b></span>
+								<ul class="ml-2">
+									<li>le texte de la fenêtre d'affichage (obligatoire de le mettre)</li>
+									<li>le deuxième paramêtre est un texte par défaut (pré rempli non obligatoire)</li>
+								</ul>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <strong>Number :</strong></span>
+								<ul class="ml-2">
+									<li>c'est un objet</li>
+									<li>isInteger est une méthode de cet objet</li>
+									<li>on met en paramètre la variable à tester</li>
+								</ul>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> TIPS : faire 2 fonctions pour
+									console.log et document.write </span>
+								<pre class="mb_0"><code class="language-js"> var l = (e) => {console.log(e)}; 
+ var w = (e) => {document.write(e)};</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <strong>Equivalence
+										:</strong></span>
+								<pre class="mb_0"><code class="language-js"> if(var1) <=> if(var1 === true)
+ if(!var1) &#60;=&#62; if(var1 == false)</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>DEBUGGER</b> du code JS
+									:</span><br>
+								<span class="ml-3"></span><i class="far fa-arrow no-gutter-alt-circle-right"></i> Mettre
+								"debugger;" dans code JS ou dans console navigateur</span> <br>
+								<span class="ml-4">(permet de mettre sur pause l'exécution du code js)</span><br>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js01">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+									01 - ALERT JS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse2" class="collapse" aria-labelledby="js01"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Premier script qui affiche une alerte</span>
+								<pre class="mb_0"><code class="language-js">alert('JavaScript Jour 1');</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js02">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+									02 - LES VARIABLES
+								</button>
+							</h2>
+						</div>
+						<div id="collapse3" class="collapse" aria-labelledby="js02"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Déclaration</b> d'une variable</span>
+								<pre class="mb_0"><code class="language-js">var prenom;</code></pre><br>
+
+								<span class="ml-2 mt-0"><i class="fas fa-caret-right"></i> <b>Affectation</b> du contenu de ma variable</span>
+								<pre class="mb_0"><code class="language-js">prenom = "Jérôme";</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Pour <b>connaitre le type</b> d'une variable : <b>typeof</b></span>
+								<pre class="mb_0"><code class="language-js">console.log(typeof prenom);</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Un <b>booléen</b> (Vrai ou Faux) ->  true or false</span>
+								<pre class="mb_0"><code class="language-js">var unBooleen = false;</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Constante</b> fixe une donnée dans une variable</span>
+								<pre class="mb_0"><code class="language-js">const PASSWORD = "motdepasse";</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Transformer une chaîne de caractères en entier : <b>parseInt()</b></span>
+								<pre class="mb_0"><code class="language-js">unNombre = parseInt(unNombre);</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Transformation d'une chaîne de caractères en décimal (float) : <b>parseFloat()</b></span>
+								<pre class="mb_0"><code class="language-js">unNombre = parseFloat(unNombre);</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Transformation d'un chiffre en chaîne de caractères (number to string) : <b>toString()</b></span>
+								<pre class="mb_0"><code class="language-js">var nbrToString = nbr.toString();</code></pre>
+									
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js03">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+									03 - LES OPERATEURS ARITHMETIQUES
+								</button>
+							</h2>
+						</div>
+						<div id="collapse4" class="collapse" aria-labelledby="js03"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Concaténation</b></span>
+								<pre class="mb_0"><code class="language-js">console.log('La réponse à la division est égale à ' + resultat);</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Remarque</b> sur la concaténation :</br></span>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La concaténation entre un string et un number donnera un string</span><br><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Multi concaténation</b></span>
+								<pre class="mb_0"><code class="language-js">console.log('La réponse à la division de ' + nb1 + '/' + nb2 + ' est égale à ' + resultat);</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Utilisation du <b>modulo</b></span>
+								<pre class="mb_0"><code class="language-js">resultat = (nb1 + 3) % nb2;
+console.log('Le modulo est de ' + resultat);</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Ecriture simplifiée <b>+=</b></span>
+								<pre class=" mb_0"><code class="language-js">nb1 = nb1 + 10;     EQUIVAUT A      nb1 += 10;</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js04">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+									04 - CONCATENATION - DATE
+								</button>
+							</h2>
+						</div>
+						<div id="collapse5" class="collapse" aria-labelledby="js04"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<pre class="mb_0"><code class="language-js">var dateDuJour = new Date();
+var jour = dateDuJour.getDate();
+var mois = dateDuJour.getMonth() + 1;
+var annee = dateDuJour.getFullYear();
+console.log(jour + "/" + mois + "/" + annee); // 15/10/2019</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js05">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+									05 - INCREMENTATION
+								</button>
+							</h2>
+						</div>
+						<div id="collapse6" class="collapse" aria-labelledby="js05"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <em>Définition</em> : Incrémenter signifie <b>augmenter de une unité</b></span><br><br>
+							
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Incrémentation</b> avec un <b>suffixe</b></span>
+								<pre class="mb_0"><code class="language-js">var a = 10;
+var b = a++;
+console.log(a); // 11
+console.log(b); // 10</code></pre><br>
+							
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Décrémentation</b> avec un <b>suffixe</b></span>
+								<pre class="mb_0"><code class="language-js">var x = 10;
+var y = x--;
+console.log(x); // 9
+console.log(y); // 10</code></pre><br>
+							
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Incrémentation</b> avec un <b>préfixe</b></span>
+								<pre class="mb_0"><code class="language-js">var a = 10;
+var b = ++a;
+console.log(a); // 11
+console.log(b); // 11</code></pre><br>
+							
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Décrémentation</b> avec un <b>préfixe</b></span>
+								<pre class="mb_0"><code class="language-js">var x = 10;
+var y = --x;
+console.log(x); // 9
+console.log(y); // 9</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Explication pour <strong>b = a++</strong></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Se déroule en 2 étapes :</span> <br>
+								<ul class="ml-2">
+									<li><em>en 1</em> : b = a (car en 1er dans le code)</li>
+									<li><em>en 2</em> : a = a + 1 (car en 2eme dans le code)</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js06">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+									06 - OPERATEURS LOGIQUES
+								</button>
+							</h2>
+						</div>
+						<div id="collapse7" class="collapse" aria-labelledby="js06"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<pre class="mb_0"><code class="language-js">var esTuVrai;</code></pre><br>
+																					
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Opérateur OU :&nbsp;&nbsp;&nbsp;" <b>OR - ||</b> "</span>
+								<pre class="mb_0"><code class="language-js">esTuVrai = true || true; // esTuVrai vaut true
+esTuVrai = false || true; // esTuVrai vaut true
+esTuVrai = true || false; // esTuVrai vaut true
+esTuVrai = false || false; // esTuVrai vaut false</code></pre><br>
+																					
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Opérateur ET :&nbsp;&nbsp;&nbsp;" <b>AND - &&</b> "</span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> <em>Remarque</em> : la version abrégé (<b>&&</b>) est <b>prioritaire</b> sur la version écrite (<b>AND</b>)</span>
+								<pre class="mb_0"><code class="language-js">esTuVrai = true && true; // esTuVrai vaut true
+esTuVrai = true && false; // esTuVrai vaut false
+esTuVrai = false && true; // esTuVrai vaut false
+esTuVrai = false && false; // esTuVrai vaut false</code></pre><br>
+																					
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>6 cas</b> où une valeur vaut "<b>false</b>"</span>
+								<pre class="mb_0"><code class="language-js">var testFalse; // retourne indéfinie donc faux
+testFalse = 0; // vaut faux car 0 = faux
+testFalse = ""; // vaut faux car vide
+testFalse = false; // vaut faux car on lui attribue faux
+testFalse = null; // null rend  la variable à faux
+testFalse = 1 - "texte"; // NaN (not a number)</code></pre><br>
+																					
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Opérateurs non logiques</b></span>
+								<pre class="mb_0"><code class="language-js">esTuVrai = !true; // esTuVrai vaut la valeur : n'est pas true (donc false)
+esTuVrai = !false; // esTuVrai vaut la valeur : n'est pas false (donc true)</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js07">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+									07 - OPERATEURS DE COMPARAISON
+								</button>
+							</h2>
+						</div>
+						<div id="collapse8" class="collapse" aria-labelledby="js07"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp ml-3">
+								<span class="ml-2">1 - Egalité: 
+								<span class="ml-1 font-weight-bold text-success">== </span></span><br>
+								<span class="ml-2">2 - Difference: 
+								<span class="ml-1 font-weight-bold text-success">!=</span></span><br>
+								<span class="ml-2">3 - Contenu et type égaux: 
+								<span class="ml-1 font-weight-bold text-success">===</span></span><br>
+								<span class="ml-2">4 - Contenu et/ou type différents 
+								<span class="ml-1 font-weight-bold text-success">!==</span></span><br>
+								<span class="ml-2">5 - Supérieur à: 
+								<span class="ml-1 font-weight-bold text-success"> <b>></b> </span></span><br>
+								<span class="ml-2">6 - Inférieur à: 
+								<span class="ml-1 font-weight-bold text-success"> <b><</b> </span></span><br>
+								<span class="ml-2">7 - Supérieur ou égal: 
+								<span class="ml-1 font-weight-bold text-success"> <b>>=</b> </span></span><br>
+								<span class="ml-2">8 - Inférieur ou égal: 
+								<span class="ml-1 font-weight-bold text-success"> <b><=</b> </span></span><br><br>
+
+								<span class="ml-2">On peut résumer les 3 niveaux d'égalité de la façon suivante :</span>
+        <ul class="ml-3">
+        	<li><span class="text-success font-weight-bold">=</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affectation</li>
+	        <li><span class="text-success font-weight-bold">==</span> &nbsp;&nbsp;&nbsp;&nbsp;égalité des valeurs (égalité faible)</li>
+	        <li><span class="text-success font-weight-bold">===</span> &nbsp;égalité des valeurs + du type (égalité stricte)</li>
+        </ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js08">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+									08 - LES TABLEAUX
+								</button>
+							</h2>
+						</div>
+						<div id="collapse9" class="collapse" aria-labelledby="js08"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> 2 manières pour <b>créer un tableau </b>:</span>
+								<pre class="mb_0"><code class="language-js">var monTableau = []; // A privilégier
+var myArray = new Array(); // A éviter</code></pre><br>	
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Déclaration</b> d'un tableau numéroté</span>
+								<pre class="mb_0"><code class="language-js">var tableau1 = ["Nicolas", "Julie", "Marylou", "Mickael", "Bertrand", "Chrystele", "Frederic", "Maxime", "Remi", "Matthieu", "Clement", "Javier", "Nicolas", "Brendan"];</code></pre><br>	
+								
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Connaitre la <b>taille d'un tab</b> (le nombre d'éléments) : <b>length</b></span>
+								<pre class="mb_0"><code class="language-js">console.log(tableau1.length);</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Afficher dans la console la <b>valeur d'un élément</b> (grâce à son index)</span>
+								<pre class="mb_0"><code class="language-js">console.log(tableau1[4]);</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Création d'un <b>tableau ASSOCIATIF</b> (correspond à un objet)</span>
+								<pre class="mb_0"><code class="language-js">var Coordonnees = {
+	prenom : "Nicolas",
+	nom    : "Brunet",
+	age    : 42,
+	taille : "172cm"
+};</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>2 méthodes pour extraire un élément</b> d'un tableau associatif :</span>
+								<pre class="mb_0"><code class="language-js">console.log(Coordonnees["nom"]); // Methode 1 - Récupérer la valeur en utilisant l'index
+console.log(Coordonnees.nom); // Methode 2 - Récupérer la relation objet</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Ajouter</b> un élément <b>à la fin</b> d'un tableau : <b>push()</b></span>
+								<pre class="mb_0"><code class="language-js">tableau1.push("Jerome");</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Ajouer</b> un élément en <b>début</b> d'un tableau : <b>unshift()</b></span>
+								<pre class="mb_0"><code class="language-js">tableau1.unshift(tableau1[17]); // ici on n'a pas donné de valeur à cet élément 
+								// on a créé un index [17];</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Supprimer</b> le <b>dernier élément</b> d'un tableau : <b>pop()</b></span>
+								<pre class="mb_0"><code class="language-js">tableau1.pop();</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Supprimer</b> le <b>premier élément</b> d'un tableau : <b>shift()</b></span>
+								<pre class="mb_0"><code class="language-js">tableauShift.shift();</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Extraire une partie</b> d'un tableau : <b>slice(debut, fin)</b></span>
+								<pre class="mb_0"><code class="language-js">tableau1.slice(début, fin);
+	// Attention : c'est de début à fin non inclus
+	// Par exemple tableau1.slice(2,4); extrait 2 et 3 (mais pas 4)</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Fusionner</b> les éléments d'un tableau : <b>join()</b></span><br>
+								<span><span class="ml-4"><i class="far fa-edit"></i><em> Remarque</em></span> : <br>
+										<span class="ml-5"><b>Par défaut</b>, join() sépare les valeurs avec des <b>virgules</b>.</span> <br>
+										<span class="ml-5">Si je souhaite utiliser un autre caractère, il faut le spécifier :</span> <span class="text-primary font-weight-bold">join('/')</span></span><br>
+								<pre class="mb_0"><code class="language-js">var resultatJoin = tableauDate.join('/');</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Séparer</b> une chaine de caractères <b>en éléments d'un tableau</b> : <b>split()</b> (contraire de join())</span>
+								<pre class="mb_0"><code class="language-js">var tableauSplit = tableauJoin.split("/");</code></pre>
+								<pre class="mb_0"><code class="language-js">var str = "How are you doing today?";
+var res = str.split(" ", 3); // How,are,you</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Tableau multidimensionnel</b> ou à plusieurs niveaux (des tab dans des tab)</span>
+								<pre class="mb_0"><code class="language-js">var jeux = ["Mario", "Zelda", "Crash Bandicoot"];
+var plateforme = ["Nintendo", "Nintendo", "Playstation"];</code></pre>
+								<pre class="mb_0"><code class="language-js">var collection = [jeux, plateforme]; 
+		// donc :  - collection[0] = jeux
+		//         - collection[1] = plateforme</code></pre><br>
+
+								<!-- modele pour exo -->
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exercice</b></span><br>
+								<div class="encart my-1 py-1">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-4">Afficher "le jeu Zelda et sa plateforme"</span><br><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<span class="mx-4">2 façons de l'écrire :</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">document.write("Le jeu est " + jeux[1] + " sur la plateforme " + plateforme[1]);
+document.write("Le jeu est " + collection[0][1] + " sur la plateforme " + collection[1][1]);</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js09">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+									09 - LES FONCTIONS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse10" class="collapse" aria-labelledby="js09"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>2 types</b> de fonctions natives :</span>
+								<ul class="ml-2">
+									<li>blabla() : fonctions génériques : sur tous les éléments</li>
+									<li>var.blabla() : sur certains éléments seulement</li>
+
+								</ul>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>3 façons</b> pour déclarer une fonction :</span>
+								<pre class="mb_0"><code class="language-js">function maFonction(para1, para2){...}
+var maFonction = function(para1, para2){...} // A privilégier -
+var maFonction = (para1, para2) =>{...} // A privilégier +</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Fonction <b>replace(para1, para2)</b> - pour les string</span><br>
+								<span class="ml-3"> Les 2 paramètres sont :</span>
+								<ul class="ml-2">
+									<li><b>para1</b> : la chaine à remplacer</li>
+									<li><b>para2</b> : la nouvelle chaine</li>
+								</ul>
+								<pre class="mb_0"><code class="language-js">var maPhrase = "Les cours de JavaScript sont pourris.";
+var maPhraseCorrigee = maPhrase.replace("pourris", "géniaux");</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Fonction <b>trim()</b> : pour supprimer les espaces blancs</span><br>
+								<span class="ml-4"><i class="far fa-edit"></i> <em>Variantes</em> : <b>trimRight()</b> et <b>trimLeft()</b></span>
+								<pre class="mb_0"><code class="language-js">var str = "  WEBFORCE3   ";
+var webforce3 = str.trim();</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> Fonction <b>concat()</b> permet d'assembler les chaînes de caractères</span>
+								<pre class="mb_0"><code class="language-js">var str3 = str1.concat(str2); // var str3 = str1 + str2</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exercice</b></span><br>
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-4">Créer une fonction</span>
+									<ul class="ml-5">
+										<li>qui calcule une addition</li> 
+										<li>qui prend en paramètre 2 chiffres à additionner</li> 
+										<li>et qui retourne le résultat dans la console</li>
+									</ul>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var addition = function(nb1, nb2){
+	var resultat = nb1 + nb2;
+	return "L'addition des chiffres " + nb1 + " et " + nb2 + " est égale à " + resultat;
+}; 
+var calculAddition = addition(1, 155);
+console.log(calculAddition);</code></pre>
+								</div><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Portée</b> des variables</span><br>
+								<ul>
+									<li><b>en dehors d'une fonction</b>, une <b>variable</b> est considérée comme <b>globale</b> (même si déclarée avec le mot clé "var")</li>
+									<li><b>dans une fonction</b>, <b>sans</b> le mot clé <b>"var"</b>, les variables sont <b>globales</b>, cad qu'elles sont accessibles en dehors de la fonction</li>
+									<span>donc utiliser tjrs "var" pour déclarer une variable dans une fonction, afin de limiter sa portée (préférer let à var)</span>
+								</ul>
+								<span class="ml-4"><i class="fas fa-info-circle"></i> <b>Différence entre var et let</b> :  <b>var</b> est similaire à let, mais avec une <b>portée de fonction</b> (là ou <b>let</b> a une <b>portée de bloc</b>)</span><br><br>
+
+								<pre class="mb_0"><code class="language-js">variable1 = "Capitaine Haddock"; // Variable globale
+								
+var portee = function(){
+	var variable1 = "Tintin"; // Variable locale - Déclaration restreinte de la variable
+	variable2 = "Milou"; //  Déclaration globale de la variable
+	var variable3 = "Dupond" // Variable locale - Déclaration restreinte de la variable
+};
+
+portee();
+console.log(variable1); // Affiche "Capitaine Haddock" - N'affiche pas "Tintin" car elle est restreinte à la fonction
+console.log(variable2); // Affiche "Milou" car variable2 n'est pas protégé par "var" : variable globale donc accessible dans tout le code
+console.log(variable3); // Erreur car la variable3 n'est connu que dans la fonction (sa portée n'est que dans la fonction)
+
+var variable1 = "Dupont";
+console.log(variable1); // Dupont - écrase "Tintin" car "Dupont" apparait ensuite dans le code (après "Tintin")</code></pre><br>
+								
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exercice</b></span><br>
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-4">Créer une fonction qui permet d'ajouter un élément dans un tableau multidimensionnel</span><br>
+									<span class="mx-4">La fonction sera de la forme : ajouterJeu(liste, jeu)</span> 
+									<pre class="mb_0 mx-2"><code class="language-js">var liste = ["Sonic", "Mario", "Zelda"]; // Tableau 1
+var liste_2 = ["Tekken", "Street Fighter", "King of Fighter"];
+var mesJeux = [liste, liste_2];
+console.log(mesJeux);</code></pre><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var ajouterJeu = (liste, jeu) =>{
+	mesJeux[liste].push(jeu);
+};
+
+//Je souhaite ajouter un jeu à la liste 1
+console.log("Je souhaite ajouetr un jeu à la liste 1");
+ajouterJeu(0, "Crash Bandicoot");
+console.log(mesJeux);
+
+//Je souhaite ajouetr un jeu à la liste 2
+console.log("Je souhaite ajouetr un jeu à la liste 2");
+ajouterJeu(1, "Rival Schools");
+console.log(mesJeux);</code></pre>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js10">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+									10 - EXERCICE 1
+								</button>
+							</h2>
+						</div>
+						<div id="collapse11" class="collapse" aria-labelledby="js10"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-3">Réaliser une fonction hello() permettant à l'utilisateur de :</span><br>
+									<span class="mx-4">1 - Saisir son prénom dans un "Prompt" </span><br>
+									<span class="mx-4">2 - Retourner à l'utilisateur : Bonjour [PRENOM], Quel age as tu ? </span><br>
+									<span class="mx-4">3 - L'utilisateur peut saisir son age </span><br>
+									<span class="mx-4">4 - Retourner à l'utilisateur : Tu es donc né en [ANNÉE DE NAISSANCE] </span><br>
+									<span class="mx-4">5 - Afficher ensuite un récapitulatif dans la page : </span><br>
+									<span class="mx-4">	Bonjour [PRENOM], tu as [AGE] !</span><br><br>
+									<pre class="mb_0 mx-2"><code class="language-js">prompt('Hello dit moi quelque chose !');
+var message = prompt('Hello dit moi quelque chose !', 'Tu es le meilleur !!!');
+console.log(message);</code></pre><br><br>
+
+									<span class="titre mx-3">--- MA VERSION ---</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var hello = () =>{
+	var prenom = prompt("Quel est votre pénom?", "Tape ton prénom");
+	var age = prompt("Bonjour " + prenom + ", quel âge as-tu ?", "Tape ton âge");
+	var date = new Date();
+	var annee_actuelle = date.getFullYear();
+	var annee_naissance = annee_actuelle - age;
+	alert("Tu es donc né en " + annee_naissance + ".");
+	document.write("Bonjour " + prenom + ", tu as " + age +" ans !");
+}
+
+hello();</code></pre><br><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var hello = () =>{
+	var dateToday = new Date();
+	var currentYear = dateToday.getFullYear();
+	// Demande du prénom
+	var prenom = prompt("Bonjour, comment t'appelles-tu ?", "Saisir un prénom");
+	console.log(prenom);
+	console.log(typeof prenom);
+
+	// Demande de l'âge
+	var age = prompt("Re bonjour, " + prenom + "quel âge as-tu ?", "Saisir votre âge");
+	console.log(age);
+	console.log(typeof age);
+
+	// Affichage du récapitulatif dans une alert
+	alert("Vous êtes né en " + (currentYear - age) + " !");
+
+	// Affichage récapitulatif dans le document
+	document.write("&#60;p&#62;Bonjour, &#60;b&#62;" + prenom + "&#60;/b&#62; vous avez &#60;b&#62;" + age + "&#60;/b&#62; ans.&#60;/p&#62;")
+
+};
+
+hello();</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js11">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+									11 - LES CONDITIONS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse12" class="collapse" aria-labelledby="js11"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exemple</b></span>
+								<pre class="mb_0"><code class="language-js">if(Number.isInteger(age)){
+	if(age &#60; limite){
+		document.write("Vous êtes mineur.");
+	}else{
+		document.write("Vous êtes majeur.");
+	}
+}else{
+	document.write("Vous n'avez pas rentré l'âge correctement.")
+}</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js12">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+									12 - LES BOUCLES
+								</button>
+							</h2>
+						</div>
+						<div id="collapse13" class="collapse" aria-labelledby="js12"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>SWITCH - DEFINITION</b></b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> L'instruction switch <b>évalue une expression</b> et, <b>selon le résultat</b> obtenu et le cas associé, <b>exécute les instructions</b> correspondantes.</span><br><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>SWITCH - EXEMPLE</b></b></span>
+								<pre class="mb_0"><code class="language-js">const monSport = "Curling";
+switch(monSport) {
+	case "Football":
+		console.log("Vous aimez le football");
+		break;
+	case "Handball":
+		console.log("Vous aimez le Handball");
+		break;
+	case "Curling":
+		console.log("Vous aimez le Curling");
+		break;
+	default:
+		console.log("Je n'ai pas trouvé votre sport !!")
+}</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>WHILE</b> (TANT QUE)</b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> L'instruction while permet de créer une <b>boucle</b> qui s'exécute <b>tant qu'une condition</b> de test <b>est vérifiée</b>. </span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La <b>condition</b> est <b>évaluée avant d'exécuter l'instruction</b> contenue dans la boucle.</span>
+								<pre class="mb_0"><code class="language-js">var i = 0;
+while (i &#60; 10) {
+	if(i &#60;= 1){
+		console.log(i + " tour");
+	}else{
+		console.log(i + " tours");
+	}
+	i++;
+}</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>DO WHILE</b> (FAIRE... TANT QUE)</b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Cette instruction crée une <b>boucle</b> qui s'exécute <b>tant que la condition est vraie</b>.</span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La <b>condition</b> est <b>évaluée après avoir exécuté une itération</b> de boucle,nce qui fait que cette boucle sera exécutée au moins une fois.</span>
+								<pre class="mb_0"><code class="language-js">var result = "";
+var i = 0;
+
+do {
+i = i + 1;
+result = result + i;
+} while (i &#60; 5);
+
+console.log(result); // "12345"</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>FOR</b></b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La boucle <b>for()</b> prend <b>3 paramètres</b>, séparées par un ";" :</span>
+								<ul class="ml-5">
+									<li><b>Initialisation</b> de la variable i</li>
+									<li>La <b>condition</b> i < ou > à une valeur</li>
+									<li>L'<b>incrémentation</b> i++</li>
+								</ul>
+								<pre class="mb_0"><code class="language-js">var str = "";
+for (var i = 0; i &#60; 9; i++) {
+	str = str + i;
+}
+console.log(str); // "012345678"</code></pre><br>
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>FOR IN</b></b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> for (je <b>nomme une variable</b> dans l'objet)</span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> le for in permet le <b>parcours d'objet</b></span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> dans un for in <b>pas besoin d'incrémenter</b> la boucle</span><br><br>
+
+								<span class="ml-4"><i class="fas fa-exclamation-triangle text-danger"></i> <b>Ne pas confondre for et for in</b> :</span><br>
+								<ul class="ml-5">
+									<li>on utilise <b>for</b> pour boucler <b>dans un tableau</b></li>
+									<li>on utilise <b>for in</b> pour boucler <b>dans un objet</b></li>
+								</ul>
+
+								<pre class="mb_0"><code class="language-js">var ObjNumero = {a: 1, b: 2, c: 3}; //rq : a, b et c sont appelés des clés
+console.log(ObjNumero);
+
+for(var key in ObjNumero){  
+	console.log(key + " ----------> " + ObjNumero[key]); 
+}
+// va renvoyer a --> 1   /    b --> 2    /    c --> 3
+
+// Créer un objet voiture
+var Voiture = {
+	marques : {
+		1 : "Fiat",
+		2 : "Renault",
+		3 : "BMW"
+	},
+	couleurs : {
+		1 : "Rose",
+		2 : "Bleu",
+		3 : "Jauine"
+	},
+	carburants : {
+		1 : "SP95",
+		2 : "SP98",
+		3 : "GO"
+	}
+};
+
+console.log(Voiture);
+
+for(var auto in Voiture){ // &#60;- Je veux boucler sur l'objet
+	// console.log(Voiture[auto]);
+	for(var x in Voiture[auto]){ //&#60;- On boucle sur chacun des objets enfants
+		// console.log(x); // Je récupère ici l'index des éléments enfants
+		console.log(Voiture[auto][x]); 
+	}
+}</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js13">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+									13 - EXERCICE 2
+								</button>
+							</h2>
+						</div>
+						<div id="collapse14" class="collapse" aria-labelledby="js13"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-2">1 - Créer un tableau qui contiendra plusieurs élèves (objets) pour calculer la moyenne du trimestre</span><br>
+									<span class="mx-4">Tableau de la forme :	Thomas Luminic : [ Français : 12, Math : 15, JavaScript : 14] ... <br>
+<pre>
+		|tableau
+		|	prenom
+		|	nom
+		|	moyenne
+		|		Français
+		|		Math
+		|		JavaScript
+</pre>
+									</span><br>
+									<span class="mx-2">2 - Il faut avoir au minimum 5 élèves</span><br>
+									<span class="mx-2">3 - Afficher sur la page, dans une liste ordonnée, les résultats des notes et de la moyenne avec le nom et le prénom de chaque élève</span><br><br>
+	
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var premierTrimestre = [
+	{// Eleve 1
+		prenom : "Audrey",
+		nom : "Canler",
+		moyenne : {
+			Francais : 19,
+			Maths : 12,
+			JavaScript : 8
+		}
+	},
+	{// Eleve 2
+		prenom : "Pierre",
+		nom : "Garcia",
+		moyenne : {
+			Francais : 14,
+			Maths : 12,
+			JavaScript : 10
+		}
+	},
+	{// Eleve 3
+		prenom : "Paul",
+		nom : "Lopez",
+		moyenne : {
+			Francais : 18,
+			Maths : 14,
+			JavaScript : 10
+		}
+	},
+	{
+		prenom: "Jean",
+		nom: "Ruffin",
+		moyenne: {
+			Francais: 8,
+			Maths: 19,
+			JavaScript: 14
+		}
+	},
+	{
+		prenom : "Maider",
+		nom : "Iturria",
+		moyenne : {
+			Francais : 15,
+			Maths : 16,
+			JavaScript : 8
+		}
+	}
+
+];
+
+l(premierTrimestre);
+w("&#60;ol&#62;");
+	for (var i = 0; i &#60; premierTrimestre.length; i++) {
+		l(premierTrimestre[i]);
+		var eleve = premierTrimestre[i];
+		w("&#60;li&#62;");
+				w(eleve.prenom + " " + eleve.nom);
+				w("&#60;ul&#62;");
+				var nbrNote = 0; // Initialisation du nombre de notes
+				var sommeNote = 0; // Initialisation du nombre de notes
+				for(var matiere in eleve.moyenne){
+					l(matiere);
+					w("&#60;li&#62;");
+						w(matiere + " : " + eleve.moyenne[matiere]);
+					w("&#60;/li&#62;");
+					nbrNote++; // Iteration
+					sommeNote += eleve.moyenne[matiere]; // Ajout de la somme des notes
+				}
+			w("&#60;li&#62;&#60;b&#62;Moyenne : &#60;/b&#62;" + (sommeNote / nbrNote).toFixed(2) + "&#60;/li&#62;");
+			w("&#60;/ul&#62;");
+		w("&#60;/li&#62;");
+	}
+w("&#60;/ol&#62;");</code></pre>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js14">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+									14 - EXERCICE 3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse15" class="collapse" aria-labelledby="js14"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-2">A partir du tableau fourni, vous devez mettre en place un système d'authentification.</span><br>
+									<span class="mx-2">Après avoir demandé à votre	utilisateur son EMAIL et son MOT DE PASSE, vous vérifirez les informations.</span><br>
+									<span class="mx-2">Ensuite, vous lui souhaitez la bienvenue avec son nom et prénom.</span><br>
+									<span class="mx-2">En cas d'échec, vous affichez une alert() lui indiquant que les données sont incorrectes.</span><br><br>
+									<pre class="mb_0 mx-2"><code class="language-js">// Base de données
+var baseDeDonnees = [
+{
+	"prenom" : "Jean", 
+	"nom" : "Lalanne", 
+	"email" : "jean@email.com", 
+	"mdp" : "JL33"
+},
+{
+	"prenom" : "Benjamin", 
+	"nom" : "Peyrat", 
+	"email" : "benjamin@email.com", 
+	"mdp" : "BP33"
+},
+{
+	"prenom" : "Christophe", 
+	"nom" : "CARREROT", 
+	"email" : "christophe@email.com", 
+	"mdp" : "CC33"
+}
+];</code></pre><br>								
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var email = prompt("Indiquez votre adresse email", "<Saisir votre adresse email>");
+var mdp = prompt("Indiquez votre mot de passe", "<Saisir votre mot de passe>");
+var isEmailInArray = false;
+
+for (i=0; i &#60; baseDeDonnees.length; i++){
+	if(email === baseDeDonnees[i].email && mdp === baseDeDonnees[i].mdp){
+		w("Bonjour, " +  baseDeDonnees[i].prenom + " " + baseDeDonnees[i].nom);
+		isEmailInArray = true; // Mon email et mon mdp sont trouvés alors je mets un repère à true
+		break;
+	}
+}
+// Si l'email ou le mdp n'est pas trouvé, alors je crée une alert()
+if(!isEmailInArray){                       // !isEmailInArray équivaut à isEmailInArray === false
+	alert("Les données sont incorrectes");
+}</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js15">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+									15 - LE DOM
+								</button>
+							</h2>
+						</div>
+						<div id="collapse16" class="collapse" aria-labelledby="js15"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <span class="text-success"><b> Le DOM</b></span></span><br><br>
+								<span class="ml-2"><i class="far fa-arrow no-gutter-alt-circle-right"></i><b>DOM : Document Object Model</b></span><br>
+								<span class="ml-5"><i class="far fa-arrow no-gutter-alt-circle-right"></i> - Il s'agit de la représentation (sous la forme d'une arborescence) <b>d'une page html sous forme d'objet js</b></span><br>
+								<span class="ml-5"><i class="far fa-arrow no-gutter-alt-circle-right"></i> - C'est une <b>représentation en noeud d'une page web</b></span><br>
+								<span class="ml-5"><i class="far fa-arrow no-gutter-alt-circle-right"></i> - &#60;html&#62; est le plus grand parent du DOM</span><br><br>
+
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <span class="text-success"><b> 1-Sélection des éléments (cf des sélecteurs / classes / identifiant)</b></span></span><br><br>
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u>Plusieurs possibilités</u> :</span><br><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Séléctionner un élément <b>par son ID</b></span>
+								<pre class="mb_0"><code class="language-js">var blocTexte = document.getElementById("blocHTML");</code></pre><br>
+
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Séléctionner des éléments <b>par leur classe</b></span>
+								<pre class="mb_0"><code class="language-js">var classDesParagraphes = document.getElementsByClassName("classParagraphe");</code></pre><br>
+
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Séléctionner <b>des éléments HTML</b></span>
+								<pre class="mb_0"><code class="language-js">var btn = document.getElementsByTagName("button");</code></pre><br>
+
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Séléctionner des éléments <b>via une écriture CSS</b></span>
+								<pre class="mb_0"><code class="language-js">var body = document.querySelector("body");
+var paragraphes = document.querySelectorAll("p"); 
+// si querySelector => sélection du 1er élément seulement</code></pre><br>
+
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <span class="text-success"><b> 2-Sélection &/ou modification des attributs des éléments</b></span></span><br><br>
+
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u><b>Méthode</b></u> :</span><br>
+								<ul class="ml-2">
+									<li>On place l'élément dans une variable</li>
+									<li>On modifie l'attribut souhaité</li>
+								</ul>
+								<span class="ml-3"><i class="fas fa-caret-right"></i> Exemple:</span>
+								<pre class="mb_0"><code class="language-js">var google = document.getElementById("google");</code></pre><br>
+
+
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u>Récupération des informations</u> :</span><br><br>
+								
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On <b>récupère le lien</b> de l'élément &#60;a&#62; (link)</span>
+								<pre class="mb_0"><code class="language-js">console.log(google.href);</code></pre><br>
+
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On <b>récupère l'ID</b> de la balise html &#60;a&#62;</span>
+								<pre class="mb_0"><code class="language-js">console.log(google.id);</code></pre><br>
+
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On <b>récupère la classe</b> de la balise html &#60;a&#62;</span>
+								<pre class="mb_0"><code class="language-js">console.log(google.className);</code></pre><br>
+
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On <b>récupère le texte</b> de la balise html &#60;a&#62;</span>
+								<pre class="mb_0"><code class="language-js">console.log(google.textContent);</code></pre><br>
+
+
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u>Modification des informations</u> :</span><br><br>
+								
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On veut <b>changer le texte de la balise</b> html &#60;a&#62;</span>
+								<pre class="mb_0"><code class="language-js">google.textContent = "Nouveau lien vers Google !";</code></pre><br>
+
+								<span class="ml-3"><i class="fas fa-caret-right"></i> On veut <b>modifier un élément de la feuille de style</b></span>
+								<pre class="mb_0"><code class="language-js">google.style.fontSize = "18px";</code></pre><br>
+
+
+								<span class="ml-3"><i class="fas fa-caret-right"></i> <span class="text-success"><b> 3-Création d'un nouvel élément dans la page</b></span></span><br><br>
+
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u><b>Méthode</b> : en 2 temps</u> :</span><br><br>
+								<span class="ml-3"><b>1.</b> On génère un <b>nouvel élément</b> avec la fonction <b>document.createElement()</b></span><br>
+									<span class="ml-3"><i class="fas fa-exclamation-triangle"></i> l'élément est seulement enregistré en mémoire</span><br>
+									<span class="ml-5"> On peut alors lui ajouter un id, un textContent...</span><br><br>
+									<span class="ml-3"><b>2.</b> On <b>ajoute cet élément au DOM</b> :</span><br>
+							
+									<span class="ml-3"> - soit avec la fonction <b>appendChild()</b></span><br>
+										<span class="ml-5"> de la forme document.PARENT.appendChild(ELEMENT)</span><br>
+										<span class="ml-5"> (l'élément est alors ajouté comme enfant du parent, en dernière position)</span><br>
+										<span class="ml-3"> - soit avec la fonction <b>insertAdjacentHTML()</b></span>
+										<span class="ml-3"> de la forme element.insertAdjacentHTML(position, text);</span><br>
+										<span class="ml-4"> position : beforebegin, afterbegin, beforeend, afterend</span><br>
+										<pre class="mb_0"><code class="language-js">body.insertAdjacentHTML("beforeend", "&#60;table&#62;");</code></pre><br>
+						
+
+								<span class="ml-5 font-weight-bold color-red-perso"><i class="fas fa-forward"></i> <u>Exemple : création d'un titre h1</u></span><br>
+								<pre class="mb_0"><code class="language-js">var h1 = document.createElement("h1");
+h1.textContent = "un nouveau titre";  
+document.body.appendChild(h1);  </code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js16">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+									16 - EXERCICE MANIPULATION DU DOM
+								</button>
+							</h2>
+						</div>
+						<div id="collapse17" class="collapse" aria-labelledby="js16"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exercice</b></span><br>
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-2">1. Créer dans la page un élément html de type H1</span><br>
+<span class="mx-4">Titre du H1 : "Bienvenue à WebForce 3"</span><br><br>
+<span class="mx-2">2. Dans le document vous créez un lien vers le site de votre choix</span><br>
+<span class="mx-4">Le lien doit être de couleur rouge et non surligné</span><br>
+<span class="mx-4">/!\ le titre reste noir</span><br>
+<span class="mx-4">/!\ pas de feuille de style CSS, ni de CSS inline...</span><br><br>
+
+<span class="mx-2"><b>Méthode:</b></span><br>
+<span class="mx-4">Création du H1</span><br>
+<span class="mx-4">Ajout du texte dans le H1</span><br>
+<span class="mx-4">Création de la balise lien</span><br>
+<span class="mx-4">Ajout du texte dans la balise lien</span><br>
+<span class="mx-4">Ajouter le lien dans le href de la balise a</span><br>
+<span class="mx-4">Ajout du H1 dans le DOM</span><br>
+<span class="mx-4">Ajout du lien dans le DOM</span><br>
+<span class="mx-4">Changer la couleur du lien</span><br>
+<span class="mx-4">Ne pas surligner le lien"</span><br><br><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var h1 = document.createElement("h1");
+h1.textContent = "un nouveau titre";
+
+var a = document.createElement("a");
+a.textContent = "Youtube";
+a.href = "https://youtube.com";
+	// ou faire : a.setAttribute("href, "https:\/\/youtube.com") 
+	// 2 paramètres : l'attribut à ajouter ; la valeur qu'on lui donne
+
+document.body.appendChild(h1);
+document.body.appendChild(a);
+
+a.style.color = "tomato"; 
+	// console(a.style) --> on a tous les styles qu'on peut appliquer à un élément
+
+a.style.textDecoration = "none";</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js17">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+									17 - LES EVENEMENTS ET LES ECOUTEURS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse18" class="collapse" aria-labelledby="js17"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-2 mt-2"> Les <b>évènements</b> permettent de <b>déclencher des fonctions lors d'une action utilisateur</b></span><br><br>
+								<span class="ml-3"><i class="fas fa-caret-square-right text-danger"></i> Il existe <b>plusieurs types</b> d'évènements</span><br><br>
+								<ul>
+									<li><b>1. Les évènements : MOUSE (souris)</b></li>
+									<ul class="fa-ul">
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>click</b> : au clic de l'utilisateur</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>mouseenter</b> : la souris passe au dessus de l'élément</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>mouseleave</b> : la souris sort de la zone</li>
+									</ul><br>
+
+									<li><b>2. Les évènements : KEYBOARD (clavier)</b></li>
+									<ul class="fa-ul">
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>keydown</b> : touche enfoncée</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>keypress</b> : touche "caractere" enclenchée (pas de keypress pour shift par exemple)</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>keyup</b> : touche relachée</li>
+									</ul><br>
+
+									<li><b>3. Les évènements : WINDOW (fenêtre)</b></li>
+									<ul class="fa-ul">
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>scroll</b> : défilement de la fenêtre </li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>resize</b> : redimensionnement</li>
+									</ul><br>
+
+									<li><b>4. Les évènements : FORM (formulaire)</b></li>
+									<ul class="fa-ul">
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>change</b> : pour les éléments &#60;input&#62;, &#60;select&#62;, &#60;textarea&#62;</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>submit</b> : l'envoi / soumission du formulaire</li>
+										<li><span class="fa-li text-success"><i class="far fa-check-circle"></i></span><b>input</b> : pour capter la saisie d'un utilisateur sur un champ &#60;input&#62;</li>
+									</ul>
+								</ul><br>
+
+								<span class="ml-3"><i class="fas fa-caret-square-right text-danger"></i> <b>Exemple</b> : <em>je souhaite changer la couleur de mon texte lorsque l'utilisateur clique sur le paragraphe</em></span><br><br>
+
+								<span class="ml-4"><i class="far fa-check-circle text-success"></i> <b>On crée un paragraphe</b></span>
+								<pre class="mb_0"><code class="language-js">var p = document.createElement("p");
+p.textContent = "Bonjour, clique moi si tu peux !!"
+document.body.appendChild(p);</code></pre><br>
+								<span class="ml-4"><i class="far fa-check-circle text-success"></i> <b>On crée une fonction</b> avec un paramètre <b>pour changer la couleur</b></span>
+								<pre class="mb_0"><code class="language-js">var changeColor = (color) => {
+	p.style.color = color;
+}</code></pre><br>
+								<span class="ml-4"><i class="far fa-check-circle text-success"></i> <b>On définit un écouteur</b></span><br><br>
+								<span class="ml-5"><i class="fas fa-sign-in-alt fz-80"></i> <b>lorsqu'on clique sur le paragraphe, la fonction changeColor() s'exécute</b> avec la couleur définie en paramètre</span>
+								<pre class="mb_0"><code class="language-js">p.addEventListener("click", function() { changeColor("tomato") });</code></pre><br><br>
+								<span class="ml-5"><i class="fas fa-sign-in-alt fz-80"></i> De manière générale, la syntaxe est la suivante</span>
+								<pre class="mb_0"><code class="language-js">target.addEventListener(type, listener);
+	// (avec listener une function())</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js18">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+									18 - EXERCICE 4
+								</button>
+							</h2>
+						</div>
+						<div id="collapse19" class="collapse" aria-labelledby="js18"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>Exercice</b></span><br>
+								<div class="encart px-1 py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-1"><b>Partie 1</b></span><br>
+									<span class="mx-2">- A l'aide de JavaScript créer un champ input de type "text" avec un ID.</span><br>
+									<span class="mx-2">- Ajouter un placehold dans l'input.</span><br>
+									<span class="mx-2">- Vérifier que le champ saisi ne dépasse pas les 25 caractères à la volée.</span><br>
+									<span class="mx-2">- Afficher une couleur rouge, si le nombre de caractères est supérieur à 25.</span><br>
+									<span class="mx-2">- Une fois que l'utilisateur a fini sa saisie, lui donner la possibilité,	de cliquer sur un bouton pour lui afficher dans un alert() un message.</span><br>
+									<span class="mx-2 mt-2">Bonus: Vous pouvez afficher une icone check ou warning dans le input</span><br><br>
+									
+									<span class="mx-1"><b>Partie 2</b></span><br>
+									<span class="mx-2">- Mettre un écouteur sur toute la page qui détecte la frappe du clavier.</span><br>
+									<span class="mx-2">- Lorque l'utilisateur tape la combinaison "webforce", afficher une alert() pour lui signaler qu'il a gagné !!!</span><br><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">// Préparation de l'input
+var input 			= document.createElement("input");
+input.id 			= "zoneText";
+input.placeholder	= "Qui es tu ?";
+input.type 			= "text";
+
+// Préparation du bouton
+var btn = document.createElement("button");
+btn.textContent = "valide ici";
+
+document.body.appendChild(input);
+document.body.appendChild(btn);
+
+var showBtn = (isVisible = true) => { // On donne un paramètre par défaut
+	if(isVisible){
+		document.body.appendChild(btn);
+	}else{
+		var nbrBtnExist = document.getElementsByTagName('button');
+		console.log(nbrBtnExist.length);
+		if(nbrBtnExist.length > 0 ){
+			document.body.removeChild(btn);
+		}
+	}
+};
+
+var countInput = (event) => {
+	// console.log(event);
+	console.log(input.value.length);
+	if(input.value.length &#60;= 25){
+		input.style.border = '3px solid aqua';
+		showBtn();
+	}else{
+		input.style.border = '3px solid tomato';
+		showBtn(false);
+	};
+};
+input.addEventListener('input', countInput);
+
+btn.addEventListener('click', function(){
+	alert(input.value);
+});
+
+
+/*****  CORRECTION - PARTIE 2  *****/
+var elKeyDown = "";
+const webforce = "webforce";
+
+document.addEventListener("keydown", (event) => {
+	// Je stocke dans une variable la touche taper
+	const keyName = event.key;
+
+	elKeyDown += keyName;
+	console.log(elKeyDown);
+
+	// On cherche la valeur dans la string
+	var result = elKeyDown.search(webforce);
+	console.log(result);
+
+	if(result !== -1){
+		alert('Vous avez trouvé le code !');
+		elKeyDown = "";
+	}
+});</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js19">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+									19 - EXERCICE MARIO
+								</button>
+							</h2>
+						</div>
+						<div id="collapse20" class="collapse" aria-labelledby="js19"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<pre class="mb_0"><code class="language-css">body {
+	margin: 0 auto;
+	padding: 0;
+	width: 1290px;
+	height: 720px;
+	background: url('../img/background.jpg') center top no-repeat;
+	background-size: contain;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(45, 1fr);
+	grid-template-rows: repeat(24, 1fr);
+}
+
+#titre {
+	color: #ffffff;
+	grid-column: 1 / 45;
+	grid-row: 12 / 15;
+	text-align: center;
+}
+
+#mario {
+	background: url(../img/mario.png) center top no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	grid-column: 1;
+	grid-row: 19;
+}
+
+.pipe1,
+.pipe2,
+.pipe3,
+.pipe4 {
+	//background: tomato;
+	width: 100%;
+	height: 100%;
+}
+
+.pipe1 {
+	grid-column: 15 / 17;
+	grid-row: 18 / 20;
+}
+
+.pipe2 {
+	grid-column: 22 / 24;
+	grid-row: 18 / 20;
+}
+
+.pipe3 {
+	grid-column: 28 / 30;
+	grid-row: 17 / 20;
+}
+
+.pipe4 {
+	grid-column: 37 / 39;
+	grid-row: 17 / 20;
+}
+
+.little-goomba-1 {
+	background: transparent url(../img/goomba.png) center top no-repeat;
+	background-size: contain;
+	grid-column: 26 / 26;
+	grid-row: 19 / 20;
+}</code></pre><br>
+								<pre class="mb_0"><code class="language-js">/*---------------------------------------------------*/
+/*			/!\ --- Aides et infos --- /!\			 */
+/*				  Votre joueur : Mario				 */
+/*			 Mario commence à la colonne 0			 */
+/*			  Mario doit éviter les pipes 			 */
+/*	      Mario doit arriver à droite de l'écran	 */
+/*----------------------------------------------------*/
+// Déclaration de mario
+let mario = document.getElementById('mario');
+// On récupère le départ du personnage
+let x = window.getComputedStyle(mario).getPropertyValue("grid-column-start");
+let y = window.getComputedStyle(mario).getPropertyValue("grid-row-start");
+
+// Limites en x et en y
+let limiteX = () => {
+	if(x >= 45){
+		x = 45;
+	}
+	if(x <= -1){
+		x = 1;
+	}
+};
+
+let limiteY = () => {
+	if(y >= 19){
+		y = 19;
+	}
+	if(y <= -15){
+		y = 15;
+	}
+};
+
+let limitePipeDown = () => {
+	if(x == 15 && y == 17 || x == 22 && y == 17 || x == 23 && y == 17 || x == 29 && y == 15 || x == 37 && y == 16){
+		return true;
+	}
+	return false;
+}
+
+
+// On ajout l'écouteur sur l'évènment keydown
+document.addEventListener('keydown', (event) => {
+	const keyName = event.key; // Déclaration de la touche appuyée
+	document.getElementById('titre').style.display = 'none';
+
+	// On teste maintenant quelle touche est appuyée 
+	// puis on applique le mouvement en css
+
+	switch(keyName){
+		case "ArrowRight":
+			console.log("Appuie sur le bouton droite");
+			if(x == 45 && y == 19){
+				console.log("fin du jeu");
+				document.getElementById("titre").style.display = "block";
+				document.getElementById("titre").textContent = "You win !!";
+
+			}
+			if(x == 14 && y == 19 || x == 14 && y == 18){
+				break;
+			}
+			if(x == 22 && y == 19 || x == 22 && y == 18){
+				break;
+			}
+			if(x == 28 && y == 19 || x == 28 && y == 18 || x == 28 && y == 17 || x == 28 && y == 16){
+				break;
+			}
+			if(x == 36 && y == 19 || x == 36 && y == 18 || x == 36 && y == 17){
+				break;
+			}
+			x++;
+			limiteX();
+			if(x >= 45){
+				x = 45;
+			}
+			mario.style.gridColumn = x;
+			break;
+		case "ArrowLeft":
+			console.log("Appuie sur le bouton gauche");
+			if(x == 16 && y == 19 || x == 16 && y == 18){
+				break;
+			}
+			if(x == 24 && y == 19 || x == 24 && y == 18){
+				break;
+			}
+			if(x == 30 && y == 19 || x == 30 && y == 18 || x == 30 && y == 17 || x == 30 && y == 16){
+				break;
+			}
+			if(x == 38 && y == 19 || x == 38 && y == 18 || x == 38 && y == 17){
+				break;
+			}
+			x--;
+			limiteX();
+			if(x <= -1){
+				x = 1;
+			}
+			mario.style.gridColumn = x;
+			break;
+		case "ArrowUp":
+			console.log("Appuie sur le bouton haut");
+			y--;
+			limiteY()
+			mario.style.gridRow = y;
+			break;
+		case "ArrowDown":
+			console.log("Appuie sur le bouton bas");
+			if(limitePipeDown()){
+				break;
+			}
+			y++;
+			limiteY()
+			mario.style.gridRow = y;
+			break;
+	}
+
+});</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js20">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+									20 - GESTION DU TEMPS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse21" class="collapse" aria-labelledby="js20"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-3 mt-2 font-weight-bold"><i class="fas fa-caret-square-right fa-lg text-danger"></i> 1. DECLENCHER UN EVENEMENT : <span class="text-danger font-weight-bold fz-120">setTimeout()</span></span><br><br>
+								<pre class="mb_0"><code class="language-js">setTimeout(function(){ alert("Hello"); }, 3000);</code></pre><br>
+								<span class="ml-2"><i class="fa fa-check-circle fa-sm"></i> <b>2 paramètres</b> à setTimeout() :</span>
+								<ul class="list-unstyled mb_0">
+									<li class="ml-5">- la fonction à exécuter</li>
+									<li class="ml-5">- Le temps après lequel cette fonction s'exécute (en millisecondes)</li>
+								</ul>
+								<span class="ml-4"><i class="fas fa-marker fa-sm text-info"></i> <b>Remarque</b> : on place le <b>setTimeout() dans une variable</b> pour pouvoir le clear ensuite</span><br><br>
+
+								<pre class="mb_0"><code class="language-js">var lancement = setTimeout(function() {
+	alert("Ce message s'affiche après 3 secondes");
+}, 3000);
+clearTimeout(lancement);</code></pre><br><br>
+
+								<span class="ml-3 font-weight-bold"><i class="fas fa-caret-square-right fa-lg text-danger"></i> 2. EFFECTUER UNE REPETITION D'UN EVENEMENT : <span class="text-danger fz-120">setInterval()</span></span><br><br>
+								
+								<pre class="mb_0"><code class="language-js">setInterval("MaFonction()", 3000);
+	// Exécute maFonction() toutes les 3 secondes</code></pre><br>
+
+								<span class="ml-4"><i class="fas fa-marker fa-sm text-info"></i> <b>Remarque</b> : on place le <b>setInterval() dans une variable</b> pour pouvoir le clear ensuite</span><br><br>
+
+								<pre class="mb_0"><code class="language-js">var changeBGColor = () => {
+	if (document.body.style.backgroundColor === "tomato") {
+		document.body.style.backgroundColor = "teal"
+	} else {
+		document.body.style.backgroundColor = "tomato";
+	}
+}
+
+var changeBG = setInterval(changeBGColor, 1000);
+clearInterval(changeBG);</code></pre><br>
+
+								<span class="ml-4"><i class="fas fa-marker text-info"></i> <b>Exemple</b> : Vous devez faire un compteur qui decompte de 20 à 0 (par tranche de 1s)</span><br>
+								<span class="ml-5">Lorsque j'arrive à 0, le compteur s'arrête</span><br>
+
+								<pre class="mb_0"><code class="language-js">var i = 20;
+var compteur = () => {
+	console.log('fonction executée');
+	if(i > 0){
+		i--;
+		document.body.textContent = i;
+	} else {
+		clearInterval(count);
+	}
+}
+var count = setInterval(compteur, 1000);</code></pre>
+								
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js21">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+									21 - jQuery 1 - LES SELECTEURS INTRO
+								</button>
+							</h2>
+						</div>
+						<div id="collapse22" class="collapse" aria-labelledby="js21"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-1 text-danger mt-2"><i class="fas fa-fan"></i> <b>PRINCIPE GENERAL</b></span><br><br>
+								<span class="ml-3 text-success"><b>Utilisation des sélecteurs CSS pour sélectionner les éléments html</b></span><br><br>
+								<span class="ml-5"><i class="fab fa-slack-hash"></i> Pour <b>sélectionner un élément HTML</b> en jQuery, il <b>suffit de mentionner le sélecteur CSS associé</b> à cet élément dans notre méthode $()</span><br><br>
+					
+								<span class="ml-3">Ainsi,</span><br>
+								<ul class="list-unstyled">
+									<li class="ml-5">* Pour <b>sélectionner tous les paragraphes</b> d’une page, on écrira <span class="font-weight-bold text-success">$(“p")</span>)</li>
+									<li class="ml-5">* Pour <b>ne sélectionner que l’élément possédant l'attribut id="p1"</b>, on écrira <span class="font-weight-bold text-success">$(“#p1")</span>.</li>
+								</ul>
+										
+								<span class="ml-3">Avec la syntaxe $(selecteur), jQuery retourne en fait un objet jQuery</span><br>
+								<div class="ml-5">
+									<span><i class="fas fa-arrow no-gutter-right fa-sm"></i> On pourra alors <b>appliquer des méthodes ou des propriétés à l’objet retourné</b> afin d’effectuer des actions ou d’obtenir des informations sur celui-ci.</span>
+								</div><br>
+								
+								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Syntaxe de base</b></span>
+								<pre class="mb_0 "><code class="language-js">$(selecteur).action()</code></pre>
+								
+								<div class="mt-2">
+									<span class="ml-2">Exemple:</span>
+									<pre class="mb_0"><code class="language-js">$("p").hide();</code></pre>
+								</div>
+
+								<div class="mt-2">
+									<span class="ml-2"><em>Remarque</em> : on peut chainer plusieurs méthodes</span>
+									<pre class="mb_0"><code class="language-js">$(selecteur).methode1().methode2().methode3();</code></pre>
+								</div><br>
+			
+								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Attendre le chargement de la page pour exécuter le jQuery</b></span>
+								<div class="ml-5">
+									<span class="ml-3"><i class="fas fa-arrow no-gutter-right fa-sm"></i> On <b>encapsulera</b> donc <b>le code jQuery</b> à chaque fois qu'on l'utilise :</span><br>
+								</div>
+								<pre class="mb_0"><code class="language-js">$(function(){
+console.log("Document chargé"); 
+});</code></pre><br>
+															
+								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Optimisation et bonnes pratiques</b></span>
+								<div class="ml-5">
+									<span class="ml-3"><i class="fas fa-arrow no-gutter-right fa-sm"></i> <b>Syntaxe: avec 2 paramètres</b> : ce qu'on veut sélectionner, et où</span><br>
+								</div>
+								<pre class="mb_0"><code class="language-js">let $p = $("p");
+console.log($("span", $p)); // Sélectionne un span qui est dans un paragraphe</code></pre><br>
+								<span class="ml-1 text-danger"><i class="fas fa-fan"></i> <b>LES SELECTEURS</b></span><br><br>
+								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Les sélecteurs CSS</b></span>
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$('p'); // je sélectionne tous les paragraphes
+	$('.maClasse'); // je sélectionne les éléments ayant .maClasse pour classe
+	$('#monId'); // je sélectionne l'élément qui possède l'identifiant #monId</code></pre>
+								</div><br>
+	
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Méthodes pour affiner la sélection : has(), filter(), not(), first(), last() et eq()</b></p>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode has()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que les <b>éléments d’une sélection</b> initiale <b>qui possèdent</b> des <b>éléments enfants</b> correspondant au <b>sélecteur</b> passé en argument de cette fonction</span><br>
+									<span class="ml-2"><b>* exemple</b> : sélectionner uniquement les éléments p qui contiennent un span</span>
+									<pre class="mb_0"><code class="language-js"> $("p").has("span");</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode filter()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que les <b>éléments qui satisfont au sélecteur</b> passé en argument de cette fonction</span><br>
+									<span class="ml-2"><b>* exemple</b> : ne sélectionner que les éléments span d’une page qui possèdent un certain attribut class</span>
+									<pre class="mb_0"><code class="language-js">$("span").filter(".souligne")</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode not()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> <b>Soustraire d’une sélection</b> de départ des <b>éléments</b> qui répondent à un certain <b>critère</b></span><br>
+									<span class="ml-2"><b>* exemple</b> : supprimer les éléments span possédant un certain attribut class d’une sélection</span>
+									<pre class="mb_0"><code class="language-js">$("span").not(".souligne")</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthodes first(), last() et eq()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que le <b>premier</b>, le <b>dernier</b>, <b>ou le ième élément</b> d'une sélection de départ</span><br>
+									<span class="ml-2"><b>exemple :</b></span>
+									<pre class="mb_0"><code class="language-js">$("span").first()   // sélectionne le 1er span
+	$("span").last()    // sélectionne le dernier span
+	$("span").eq(1)     // sélectionne le 2éme span</code></pre><br>
+</div>
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Accéder à l'élément parent ou aux ancetres d'un élément en jQuery</b></p>
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode parent()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder à l’élément parent</b> (c’est-à-dire à l’ancêtre direct) de l'élément sélectionné;</span><br>
+									<span class="ml-3"> - On peut lui passer un sélecteur en argument, ce qui va filtrer la sélection : </span><br>
+									<span class="ml-5"><i class="fas fa-arrow no-gutter-right fa-sm"></i> - On ne va accéder au parent que s'il correspond au sélecteur</span>
+								</div>
+
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$("li").parent()            // cible le parent direct de chaque li 
+$("li").parent("#parents")  // cible le parent direct de chaque li ssi il possède l'id="parents"</code></pre>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode parents()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder aux éléments enfants (descendants directs)</b> d’un élément html;</span><br>
+									<span class="ml-3"> - Fonctionne comme parent() : filtre la sélection par le sélecteur passé en argument</span>
+								</div>
+
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$("ul").parents()       // cible les ancetres des ul
+$("ul").parents("div")  // cible les ancetres des ul ssi ils sont dans une div</code></pre>
+								</div><br>
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> <b>Accéder aux enfants ou descendants</b> d'un élément en jQuery</b></p>
+								
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode children()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder à l’élément parent (c’est-à-dire à l’ancêtre direct)</b> de l'élément sélectionné</span><br>
+								</div>
+								<div class="ml-4">									
+									<pre class="mb_0"><code class="language-js">$(".conteneur").children()      // cible les enfants des éléments contenant class="conteneur"
+$(".conteneur").children("h1")  // cible que les h1 enfants des éléments contenant class="conteneur"</code></pre>
+								</div><br>
+
+								<div class="ml-4">
+								<span class="ml-3 text-info"><b>Méthode find()</b></span><br>
+								<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder aux descendants</b> d’un élément html</span><br>
+								<span class="ml-3">Si sélecteur passé en argument, il filtre la sélection</span>
+
+								<pre class="mb-1"><code class="language-js">$(".souligne").find()      // cible tous les descendants des éléments contenant class="souligne"
+$(".souligne").find("h1")  // cible que les h1 descendants des éléments contenant class="souligne"</code></pre>
+								<span class="ml-3"> <i class="fas fa-info-circle color-red-perso"></i> rq: pour avoir tous les descendants d'un élément, on passe * en argument</span>
+									<pre class="mb_0"><code class="language-js">$("#titre").find("*")       // cible tous les descendants de l'élément id="titre"</code></pre>
+								</div><br>
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Accéder aux éléments frères d'un élément en jQuery</b></p>
+								
+								<span class="ml-5"><i class="fas fa-share"></i>  <b>Remarque</b> : pour tous, possible de passer un sélecteur en argument pour filtrer la sélection</span><br><br>
+								
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode siblings()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'ensemble des éléments frères</b> d’un élément sélectionné</span><br>
+									<pre class="mb_0"><code class="language-js">$(selector).siblings(filter)</code></pre>
+								</div><br>
+								
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode next()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'élément frère suivant</b> immédiatement l'élément sélectionné</span><br>
+									<pre class="mb_0"><code class="language-js">$(selector).next(filter)</code></pre>
+								</div><br>
+								
+								<div class="ml-4">
+								<span class="ml-3 text-info"><b>Méthode prev()</b></span><br>
+								<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'élément frère précédent</b> immédiatement l'élément sélectionné</span><br>
+								<pre class="mb_0"><code class="language-js">$(selector).prev(filter)</code></pre>
+								</div><br>
+
+								<span class="ml-1 text-danger"><i class="fas fa-fan"></i> <b>FONCTIONNEMENT DES METHODES GETTERS ET SETTERS jQuery</b></span><br><br>
+
+
+								<span class="ml-3"><i class="fab fa-slack-hash fa-sm color-red-perso"></i> Contrairement à JS qui a des getters et des setters (ex getAttribute & setAttribute), les <b>méthodes en jQuery vont occuper les 2 fonctions</b> :</span>
+								<ul class="ml-5 list-unstyled">
+									<li>- fonction de <b>setter</b> si la méthode n'a <b>pas d'argument</b></li>
+									<li>- fonction de <b>getter</b> si la méthode possède un <b>argument</b></li>
+								</ul>
+
+								<span class="ml-3"><i class="fab fa-slack-hash fa-sm color-red-perso"></i> <b>Remarque</b> : si on sélectionne <b>plusieurs éléments</b> :</span>
+								<ul class="ml-5 list-unstyled">
+									<li>- si fonction de <b>setter</b> : <b>tous les élément</b>s sont pris en compte</b></li>
+									<li>- si fonction de <b>getter</b> : seul l'<b>info du 1er élément</b> sera renvoyé</b></li>
+									<li class="ml-3">exception pour <b>text()</b> qui renverra les valeurs de tous les éléments</li>
+								</ul>
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Les differentes méthodes usuelles</b></p>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode html()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir le contenu HTML du premier élément</b> d’une sélection <b>ou</b> de <b>définir le contenu HTML de tous les éléments</b> de la sélection;</span><br>
+									<pre class="mb_0"><code class="language-js">$("h1").html()  // html() comme getter
+$("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode text()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir ou</b> de <b>définir</b> les <b>contenus textuels de tous les éléments</b> d’une sélection;</span><br>
+									<span class="ml-3"> <b>Remarque</b> : A la différence de la méthode html(), <b>seul le contenu textuel va pouvoir être récupéré</b> et on ne va pouvoir également définir que du contenu textuel dans nos éléments.</span>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode attr()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir</b> la <b>valeur d’un attribut du premier élément</b> d’une sélection <b>ou</b> de <b>définir</b> un ou plusieurs <b>attributs</b> <b>pour tous les éléments</b> de la sélection;</span>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode prop()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir</b> la <b>valeur</b> d’une <b>propriété du premier élément</b> d’une sélection <b>ou</b> de <b>définir</b> une ou plusieurs <b>propriétés pour tous les éléments</b> de la sélection;</span>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>Méthode val()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir la valeur</b> (le contenu de l’attribut value) <b>du premier élément</b> d’une sélection <b>ou</b> de <b>définir</b> une <b>valeur pour tous les éléments</b> de la sélection;</span>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info pb-2"><b>Méthode css()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir</b> la <b>valeur</b> d’une <b>propriété CSS pour le premier élémen</b>t d’une sélection ou de <b>définir</b> les <b>valeurs</b> d’une ou de plusieurs <b>propriétés CSS pour tous les éléments</b> de la sélection;</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js22">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+									22 - jQuery 2 - AJOUT - MODIFICATION D'ELEMENTS + CSS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse23" class="collapse" aria-labelledby="js22"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Insérer du contenu dans un élément</b></p>
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>prepend() et append()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> <b>Insérer</b> du contenu <b>en tant que premier (prepend())</b> et <b>dernier enfant (append())</b> d’un élément cible.</span><br>
+									<span class="ml-5">Le <b>contenu à insérer</b> devra être passé <b>en argument</b> de ces méthodes.</span>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(selector).append(content,function(index,html))</code></pre>
+									<pre class="mb_0"><code class="language-js">$(".conteneur").append("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62")</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>prependTo() et appendTo()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> même chose mais syntaxe différente</span><br>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(content).appendTo(selector)</code></pre>
+									<pre class="mb_0"><code class="language-js">$("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62").appendTo(".conteneur");</code></pre>
+								</div><br>
+
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Insérer du contenu avant ou après un élément</b></p>
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>before() et after()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> <b>Ajouter</b> du <b>contenu avant</b> et <b>après</b> une sélection d’éléments.</span><br>
+									<span class="ml-5">Le <b>contenu à ajouter</b> devra être passé <b>en argument</b>.</span><br>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js"> $(selector).before(content,function(index))</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>insertBefore() et insertAfter()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> <b>même chose</b> mais syntaxe différente</span><br>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(content).insertBefore(selector)</code></pre>
+								</div><br>
+
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Supprimer des éléments et des contenus HTML</b></p>
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>remove()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> La méthode remove() <b>supprime les éléments</b> sélectionnés, <b>y compris tous les nœuds de texte et les enfants</b>.</span><br>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(selector).remove()</code></pre>
+								</div><br>
+
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Remplacer des éléments HTML</b></p>
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>replaceAll()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> Cette méthode va prendre la sélection d’<b>éléments à remplacer en argument</b></span><br>
+									<span class="ml-5">On va <b>appliquer cette méthode sur l’élément qui va servir d’élément de remplacement</b>.</span><br>
+									<span class="ml-5">Elle <b>ne va pas renvoyer la liste des éléments supprimés</b></span><br>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(content).replaceAll(selector)</code></pre><br>
+								</div>
+
+								<div class="ml-4">
+									<span class="ml-3 text-info"><b>replaceWith()</b></span><br>
+									<span class="ml-5"><i class="fas fa-share fa-sm"></i> Cette méthode va fonctionner dans l’<b>autre sens</b> : </span>
+									<ul class="ml-5 list-unstyled">
+										<li>- on va l’<b>appliquer aux éléments qu’on souhaite supprimer et remplacer</b>,</li>
+										<li>- et on va lui passer le <b>contenu de remplacement en argument</b>.</li>
+										<span class="ml-5">Elle <b>va renvoyer la liste des éléments supprimés</b></span>
+									</ul>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">$(selector).replaceWith(content,function(index))</code></pre>
+								</div><br>
+
+
+								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> La méthode jQuery css()</b></p>
+								<div class="ml-4">
+									<span class="ml-3"><i class="fab fa-slack-hash fa-sm color-red-perso"></i> Méthode qui s'utilise de <b>2 façons</b> :</span>
+									<ul class="ml-5 list-unstyled">
+										<li>- soit <b>en tant que getter afin d’obtenir la valeur</b> liée à une propriété CSS d’un élément,</li>
+										<li>- soit <b>en tant que setter pour définir des propriétés CSS</b> et leurs valeurs pour une sélection d’éléments.</li>
+									</ul>
+								</div>
+	
+								<div class="ml-4">
+									<pre class="mb_0"><code class="language-js">css({“prop1 : valeur”, “prop2 : valeur”})</code></pre>
+								</div><br>
+
+								<div class="ml-4">
+									<span class="ml-3"><b>* Ex comme getter</b> : récupère la police et l'affiche</span><br>
+									<pre class="mb_0"><code class="language-js"> let police = $("body").css("font-family");
+$("#police").text(police);</code></pre><br>
+								</div>
+	
+								<div class="ml-4">
+									<span class="ml-3"><b>* Ex comme setter</b> : change la police d'écriture</span><br>
+									<pre class="mb_0"><code class="language-js">$("body").css("font-family", "Nunito, Futura, Verdana");
+// Met à jour la valeur du span
+police = $("body").css("font-family");
+$("#police").text(police);</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js23">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+									23 - jQuery 3 - La gestion des événements
+								</button>
+							</h2>
+						</div>
+						<div id="collapse24" class="collapse" aria-labelledby="js23"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-3 text-info my-2"><b>jQuery fournit des méthodes pour gérer les évènements</b></span><br>
+									<div class="ml-4 mt-2">
+										<span class="font-weight-bold"><i class="fab fa-slack-hash fa-sm color-red-perso"></i> ex : click(), mouseenter(), keyup(), change()</span><br>
+										<span class="ml-5">Ce sont en fait des <b>notations raccourcies de la méthode jQuery on()</b> qui va nous permettre de <b>gérer plusieurs événements</b> au sein d’une même fonction gestionnaire d’événements.</span><br>
+									</div>
+		
+									<div class="ml-4 mt-3">
+										<span class="ml-2"><b>Exemple</b> : pouvoir gérer un événement click sur un paragraphe en changeant le texte de ce paragraphe</span>
+										<pre class="mb_0"><code class="language-js">// v1 
+		$(function(){
+			$("p").click(function(){
+				$(this).text("Paragraphe cliqué");
+		});
+	// v2 (équivalent à v1)
+		$(function(){
+			$("p").on("click", function(){
+				$(this).text("Paragraphe cliqué");
+		});
+	
+	// rq : this fait référence à l’élément qui a initié l’événement, 
+	//      c’est-à-dire l’élément où l’événement a été déclenché.</code></pre>
+									</div><br>
+	
+									<div class="ml-4">
+										<span class="ml-3 text-info"><b>La méthode submit()</b></span><br>
+										<span class="ml-5"><i class="fas fa-share fa-sm"></i> Elle permet d’attacher un gestionnaire d’événement à un élément pour l’événement submit.</span><br>
+										<span class="ml-5">L’événement submit <b>se déclenche dès qu’un utilisateur tente d’envoyer un formulaire</b>.</span><br>
+										<span class="ml-5">On ne va pouvoir intercepter cet événement que depuis l’élément form.</span><br>
+									</div>
+		
+									<div class="ml-4 mt-3">
+										<span class="ml-2"><b>Exemple</b> : pouvoir gérer un événement click sur un paragraphe en changeant le texte de ce paragraphe</span>
+										<pre class="mb_0"><code class="language-js">$(function() {
+		$("#monFormulaire").submit(function(e) {
+			// Je vais stopper la propagation de l'évènement
+			// Je stoppe le formulaire
+			e.preventDefault();
+	
+			let $lastname = $("#lastname");
+			if($lastname.val().length === 0){
+				$lastname.next().remove();
+				$('&#60div class="invalid"' + $red + 
+					'&#62>Vous n\'avez pas rempli votre nom.&#60/div&#62>')
+					.appendTo($lastname.parent());
+			} else {
+				$lastname.next().remove();
+				$('&#60div class="success"' + $green + 
+					'&#62>Champ valide.&#60/div&#62>')
+					.appendTo($lastname.parent());
+			
+			// Si le formulaire ne comporte pas d'erreur,
+			// on l'efface et on affiche un message de réussite
+	
+			console.log($t.find('.invalid'));
+			if($t.find('.invalid').length === 0) {
+				$t.replaceWith('&#60div class="alert alert-success"&#62>Message ok&#60/div&#62>');
+			}else{
+				$t.prepend('&#60div class="alert alert-danger"&#62>Pas ok&#60/div&#62>')
+		});
+	});</code></pre>
+									</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- <div class="card">
+						<div class="card-header-resp bg-dark" id="js24">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse25" class="collapse" aria-labelledby="js24"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>-->
+
+					<div class="card"> 
+						<div class="card-header-resp bg-dark" id="js25">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+									25 - EXERCICE 5
+								</button>
+							</h2>
+						</div>
+						<div id="collapse26" class="collapse" aria-labelledby="js25"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-1">CONSIGNE: Avec l'aide de jQuery, vous devez:</span><br>
+									<ol>
+										<li>A la soumission du formulaire, cacher le formulaire</li>
+										<li>Créer un élément &#60;p&#62; une fois le formulaire caché</li>
+										<li>Dans cet élément, afficher : Bonjour, &#60;nom complet&#62; correspondant à la saisie du formulaire</li>
+									</ol>
+									<span class="mx-1">Aide: Votre formulaire est composé d'un champs pour la saisie du nom et prénom et d'un bouton pour valider.</span><br>
+									<pre class="mb_0 mx-2"><code class="language-markup">​&#60;form id="monFormulaire" action="traitement.php" method="post"&#62;
+​   &#60;input type="text" required placeholder="Nom et Prénom"&#62;
+	&#60;button&#62;Je valide&#60;/button&#62;
+&#60;/form&#62;</code></pre>
+									<span class="mx-1">Astuce : Pour stopper la propagation d'un script on peut utiliser <b>e.preventDefault();</b></span><br>
+									<span class="mx-1">Voir la documentation : https://api.jquery.com/submit/</span><br><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">$(function() {
+$("#monFormulaire").submit(function(e) {
+	// Je vais stopper la propagation de l'évènement
+	// Je stoppe le formulaire
+	e.preventDefault();
+
+	// Référence à l'élément en cours : #monFormulaire
+	console.log($(this));
+
+	let $t = $(this);
+
+	// Je cache le formulaire en prenant la référence this
+	// qui appelle l'id en ciours
+	$t.hide();
+
+	//Je stocke le résultat de l'input dans une variable
+	let $valInput = $("input", $t).val();
+	console.log($valInput);
+
+	// Afficher dans un paragraphe le résultat avec le bjt
+	$("body").append("&#60;p&#62;Bonjour " + $valInput + " &#60;/p&#62;");
+	// ---- autre solution : utilisation de remplacement avec une fonction dédiée jQurery
+	$t.replaceWith("&#60;p&#62;Bonjour " + $valInput + " &#60;/p&#62;");
+	});
+});</code></pre>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js26">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+									26 - EXERCICE 6
+								</button>
+							</h2>
+						</div>
+						<div id="collapse27" class="collapse" aria-labelledby="js26"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<span class="mx-1">A partir du formulaire de contact :</span><br>
+									<ol>
+										<li>Afficher à l'utilisateur un récapitulatif de sa demande (utilisation de <b>this</b> et de <b>replaceWith</b> possible)</li>
+										<li>Créer un élément &#60;p&#62; une fois le formulaire caché</li>
+										<li>Utiliser aussi des balises html de structure et de style pour avoir quelque chose de présentable.</li>
+									</ol>
+								
+									<pre class="mb_0 mx-2"><code class="language-js">&#60;form id="monFormulaire" action="traitement.php" method="post"&#62;
+&#60;fieldset&#62;
+	&#60;input type="text" id="fullName" placeholder="Nom et prénom" name="fullName"&#62;
+	&#60;input type="email" id="email" placeholder="E-mail" name="email"&#62;
+	&#60;input type="tel" id="tel" placeholder="Téléphone" name="tel"&#62;
+	&#60;input type="text" id="sujet" placeholder="Sujet" name="sujet"&#62;
+	&#60;textarea name="message" id="message" cols="30" row no-gutters="10"&#62;&#60;/textarea&#62;
+	&#60;button type="submit">Envoyer ma demande&#60;/button&#62;
+&#60;/fieldset&#62;
+&#60;/form&#62;</code></pre><br>
+
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">$(function() {
+	// écouteur sur le submit
+	$('#monFormulaire').on('submit', function(e) {
+	// Attention à bien stopper l'envoi du form
+	e.preventDefault();
+
+
+	// On récupère les informations de l'user
+	let $valNom = $("#fullName").val();
+	let $valEmail = $("#email").val();
+	let $valTel = $("#tel").val();
+	let $valSujet = $("#sujet").val();
+	let $valMsg = $("#message").val();
+
+
+	// $('span').css({
+	// 	paddingRight : '30px', // marge intérieure de 30px
+	// 	'margin-left' : '10px' // marge extérieure de 10px
+	// });
+
+	// Récapitulatif du formulaire
+	let $t = $(this);
+	$t.replaceWith("&#60;p&#62;Bonjour &#60;b&#62;" +
+	$valNom + "&#60;/b&#62;" +
+	"(Email: " + $valEmail + ")&#60;/br&#62;" +
+	"Vous nous avez contacté au sujet de : &#60;b&#62;" +
+	$valSujet + "&#60;/b&#62; Nous vous recontacterons sur le numéro : " +
+	$valTel + " &#60;br&#62;Ci-dessous votre message : &#60;br&#62;" +
+	$valMsg + "&#60;/p&#62;");
+	$('*').css("fontSize", "15px");
+	$('*').css("fontFamily", "Arial");
+	$('p').css("margin", "20px");
+	$('p').css("lineHeight", "25px");
+	});
+});</code></pre></div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js27">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+									27 - VALIDATION DE FORMULAIRE
+								</button>
+							</h2>
+						</div>
+						<div id="collapse28" class="collapse" aria-labelledby="js27"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<div class="encart py-2">
+									<span class="titre mx-3">ENONCE EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-html">&#60;form action="/traitement.php" id="contact" class="needs-validation" method="POST"&#62;
+&#60;fieldset&#62;
+	&#60;!-- Nom du formulaire --&#62;
+	&#60;legend class="text-center"&#62;Ajouter un contact&#60;/legend&#62;
+	​
+	&#60;div class="form-group"&#62;
+		&#60;label for="lastname"&#62;Nom&#60;/label&#62;
+		&#60;input type="text" class="form-control" id="lastname" name="lastname" value=""&#62;
+	&#60;/div&#62;
+	​
+	&#60;div class="form-group"&#62;
+		&#60;label for="firstname"&#62;Prénom&#60;/label&#62;
+		&#60;input type="text" class="form-control" id="firstname" name="firstname" value=""&#62;
+	&#60;/div&#62;
+	​
+	&#60;div class="form-group"&#62;
+		&#60;label for="email"&#62;E-mail&#60;/label&#62;
+		&#60;input type="email" class="form-control" id="email" name="email" value=""&#62;
+	&#60;/div&#62;
+	​
+	&#60;div class="form-group"&#62;
+		&#60;label for="tel"&#62;Téléphone&#60;/label&#62;
+		&#60;input type="tel" class="form-control" id="tel" name="tel" value=""&#62;
+	&#60;/div&#62;
+	​
+	&#60;button class="btn btn-primary"&#62;
+		Ajouter un contact
+	&#60;/button&#62;
+&#60;/fieldset&#62;
+&#60;/form&#62;</code></pre><br>
+																
+									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+									<pre class="mb_0 mx-2"><code class="language-js">var validateEmail = function(email) {
+	// comparer l'email au masque email (email@email.com)
+	var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+	var valid = emailReg.test(email);
+	if (!valid) {
+		return false;
+	} else {
+		return true;
+	}
+}
+var validateTel = tel => {
+	var telReg = new RegExp("^(0|\\+33|0033)[1-9][0-9]{8}$");
+	var valid = telReg.test(tel);
+
+	if (!valid) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+$(function() {
+	$("#contact").on("submit", function(e) {
+		// On stope l'évènement
+		e.preventDefault();
+
+		// On défini les variables
+		let $lastname = $("#lastname"),
+			$firstname = $("#firstname"),
+			$email = $("#email"),
+			$tel = $("#tel"),
+			$red = "style=\"color:tomato; border: 1px solid tomato;\"",
+			$green = "style=\"color:green; border: 1px solid green;\"",
+			$t = $(this);
+
+		console.log($lastname.val());
+		//Si la longueur de la valeur est égale à 0
+		if($lastname.val().length === 0){
+			$lastname.next().remove();
+			$('&#60;div class="invalid"' + $red + 
+				'&#62;Vous n\'avez pas rempli votre nom.&#60;/div&#62;')
+				.appendTo($lastname.parent());
+		} else {
+			$lastname.next().remove();
+			$('&#60;div class="success"' + $green + 
+				'&#62;Champ valide.&#60;/div&#62;')
+				.appendTo($lastname.parent());
+		};
+
+		if($firstname.val().length === 0){
+			$firstname.next().remove();
+			$('&#60;div class="invalid"' + $red + 
+				'&#62;Vous n\'avez pas rempli votre prénom.&#60;/div&#62;')
+				.appendTo($firstname.parent());
+		} else {
+			$firstname.next().remove();
+			$('&#60;div class="success"' + $green + 
+				'&#62;Champ valide.&#60;/div&#62;')
+				.appendTo($firstname.parent());
+		};
+
+
+		// vérificationb validation email
+		if(! validateEmail ($email.val())){
+			$email.next().remove();
+			$('&#60;div class="invalid"' + $red + 
+				'&#62;Vous n\'avez pas rempli correctement votre mail.&#60;/div&#62;')
+				.appendTo($email.parent());
+		} else {
+			$email.next().remove();
+			$('&#60;div class="success"' + $green + 
+				'&#62;Champ valide.&#60;/div&#62;')
+				.appendTo($email.parent());
+		};
+
+		//vérificationb validation tel
+		if(! validateTel ($tel.val())){
+			$tel.next().remove();
+			$('&#60;div class="invalid"' + $red + 
+				'>Vous n\'avez pas rempli correctement votre numéro de téléphone.&#60;/div&#60;')
+				.appendTo($tel.parent());
+		} else {
+			$tel.next().remove();
+			$('&#60;div class="success"' + $green + 
+				'>Champ valide.&#60;/div>')
+				.appendTo($tel.parent());
+		};
+
+		// Si le formulaire ne comporte pas d'erreur,
+		// on l'efface et on affiche un message de réussite
+
+		console.log($t.find('.invalid'));
+		if($t.find('.invalid').length === 0) {
+			$t.replaceWith('&#60;div class="alert alert-success"&#62;Message ok&#60;/div&#62;');
+		}else{
+			$t.prepend('&#60;div class="alert alert-danger"&#62;Pas ok&#60;/div&#62;')
+
+		};
+	});
+});</code></pre>
+								</div>
+									
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js28">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+									28 - CREER UNE LISTE DE CONTACTS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse29" class="collapse" aria-labelledby="js28"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+									<div class="encart py-2">
+										<span class="titre mx-3">ENONCE EXERCICE</span><br>
+										<span class="mx-1">CONSIGNE:</span><br>
+										<ul>
+											<li>Créer un formulaire HTML permettant le remplissage d'une Fiche de contact : Nom, Prénom, E-mail, Tél.</li>
+											<li>Après vérification des infos, vous ajouterez le nouveau contact dans un tableau d'objet contacts.</li>
+											<li>Vous afficherez ensuite l'ensemble des contacts sur la page HTML à la suite du formulaire dans un tableau HTML</li>
+										</ul>
+										<span class="mx-1">METHODE POSSIBLE:</span><br>
+										<ol>
+											<li>Créer le tableau d'objet JS qui va stocker les contacts et récupérer les infos du formulaire</li>
+											<li>On crée les fonctions de validation du tel t de l'email qui nous serviront pour les verifications</li>
+											<li>On fait la validation pour nos 4 champs de formulaire en utilisant les fonctions de validation tel et email</li>
+											<li>Si validation est ok, on crée l'objet contact, sinon on affiche l'erreur </li>
+											<li>On ajoute le contact dans le tableau JS et html</li>
+											<li>Cas particulier : on vérifie si le contact existe déjà dans la liste de contacts</li>
+											<span class="mx-4">si déjà présent, on ne l'ajoute pas et on renvoie une alerte à l'utilisateur</span>
+											<li>On ajoute une fonction pour réinitialiser le formulaire qu'on appellera dans les cas suivants :</li>
+											<ul>
+												<li>soumission de formulaire ok</li>
+												<li>contact déjà présent</li>
+											</ul>  
+										</ol>
+
+										<pre class="mb_0 mx-2"><code class="language-html">&#60;form action="traitement.php" id="contact" class="jumbotron py-3 my-3&#62;>
+	&#60;div class="alert alert-success" style="display: none;" id="alertContact&#62;>
+		Contact ajouté !
+	&#60;/div>
+	&#60;div class="alert alert-danger" style="display: none;" id="alertErreurContact&#62;>
+		Il y a une erreur, le contact n'a pas pu être ajouté.
+	&#60;/di&#62;>
+	&#60;fieldse&#62;>
+		&#60;legend class="pb-2&#62;>Ajouter un contact&#60;/legen&#62;>
+		&#60;div class="form-group&#62;>
+			&#60;label for="lastname&#62;>Nom :&#60;/labe&#62;>
+			&#60;input type="text" name="lastname" id="lastname" class="form-control&#62;>
+		&#60;/di&#62;>
+​
+		&#60;div class="form-group&#62;>
+			&#60;label for="firstname&#62;>Prenom :&#60;/labe&#62;>
+			&#60;input type="text" name="firstname" id="firstname" class="form-control&#62;>
+		&#60;/di&#62;>
+​
+		&#60;div class="form-group&#62;>
+			&#60;label for="email"&#62;E-Mail&#60;/label&#62;
+			&#60;input type="text" name="email" id="email" class="form-control"&#62;
+		&#60;/div&#62;
+​
+		&#60;div class="form-group"&#62;
+			&#60;label for="tel"&#62;Téléphone&#60;/label&#62;
+			&#60;input type="text" name="tel" id="tel" class="form-control"&#62;
+		&#60;/div&#62;
+		&#60;div class="text-center mt-2"&#62;
+			&#60;button class="btn btn-success"&#62;Envoyer&#60;/button&#62;
+		&#60;/div&#62;
+​
+	</fieldset>
+</form></code></pre><br>
+
+										<span class="titre mx-3">SOLUTION EXERCICE</span><br>
+										<pre class="mb_0 mx-2"><code class="language-js">$(function(){
+	console.log("document chargé");
+
+	let collectionDeContacts =[];
+
+	$("#contact").on("submit", function(e){
+		e.preventDefault();
+		$nom = $("#lastname").val()
+		$prenom = $("#firstname").val()
+		$email= $("#email").val()
+		$tel = $("#tel").val()
+
+		// console.log($nom);
+
+		let isValid = true;
+
+		if($nom.length === 0){
+			isValid = false;
+		}
+
+		if($prenom.length === 0){
+			isValid = false;
+		}
+		
+
+		if(!validateTel($tel)){
+			isValid = false;
+		}
+
+		if(!validateEmail($email)){
+			isValid = false;
+		}
+
+		//console.log(isValid);
+
+		if(!isValid){
+			//$("#alertErreurContact").css("display", "block");
+			//$("#alertErreurContact").show();
+			$("#alertErreurContact").fadeIn(1500).delay(4000).fadeOut(2000);
+
+		} else {
+			let NouveauContact = {
+				nom: $nom,
+				prenom: $prenom,
+				tel: $tel,
+				email: $email
+			};
+
+			if(contactDejaPresent(NouveauContact)){
+				alert("Contact deja present");
+			} else {
+				ajouterContact(NouveauContact);
+				console.log(collectionDeContacts);
+			}
+			reinitialiseFormulaire();
+		}
+	})
+
+	var validateEmail = function(email) {
+		// comparer l'email au masque email (email@email.com)
+		var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+		var valid = emailReg.test(email);
+		if (!valid) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	var validateTel = tel => {
+		var telReg = new RegExp("^(0|\\+33|0033)[1-9][0-9]{8}$");
+		var valid = telReg.test(tel);
+	
+		if (!valid) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	let ajouterContact = contact => {
+		collectionDeContacts.push(contact);     // ajout dans le tabeleau JS
+		$("#aucunContact").hide();
+		$("&#60;tr&#62;" + 
+			"&#60;td&#62;" + contact.nom + "&#60;/td&#62;" +
+			"&#60;td&#62;" + contact.prenom + "&#60;/td&#62;" +
+			"&#60;td&#62;" + contact.email + "&#60;/td&#62;" +
+			"&#60;td&#62;" + contact.tel + "&#60;/td&#62;" +
+			"&#60;/tr").appendTo($("#tableauContacts &#62; tbody"));
+	}
+
+	let contactDejaPresent = contact => {
+		let estPresent = false;
+		for (let i = 0; i &#60; collectionDeContacts.length; i++){
+			if(contact.email === collectionDeContacts[i].email){
+				estPresent = true;
+				break;
+			}
+		}
+		return estPresent;
+	}
+
+	let reinitialiseFormulaire = () => {
+		$("#contact").trigger("reset");
+	}
+
+});</code></pre>
+										</div>
+
+							</div>
+						</div>
+					</div>
+
+				<div class="card">
+						<div class="card-header-resp bg-dark" id="js29">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+									29 - LES CLASSES EN JS
+								</button>
+							</h2>
+						</div>
+						<div id="collapse30" class="collapse" aria-labelledby="js29"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-3"><i class="fas fa-share fa-sm"></i>On crée une Class avec des paramètres</span><br>
+								<pre class="mb_0 mx-2"><code class="language-js">let Animal = function(nom, proprietaire, type){  
+	// This fait référence à l'instance de l'animal en cours
+	// L'objet Animal aura donc 3 propriétés
+	this.nom            = nom;
+	this.proprietaire   = proprietaire;
+	this.type           = type;
+
+	// L'objet Animal aura une méthode
+	this.bonjour = function(){
+		alert("Bonjour, le " +
+		this.type + " " +
+		this.nom + " appartient à " +
+		this.proprietaire + ".");
+	}
+};
+
+let Animal1 = new Animal("Milou", "Tintin", "chien");
+console.log(Animal1.nom);   // affiche "Milou"
+
+let Animal2 = new Animal("Felix", "la nana de la pub", "chat");
+Animal2.bonjour();</code></pre><br>
+								<span class="ml-3 text-info"><b> Création d'une classe normalisée ECMASCRIPT 6</b></span><br>
+								<span class="ml-5"><i class="fas fa-share fa-sm"></i> Elle permet d’attacher un gestionnaire d’événement à un élément pour l’événement submit.</span><br>
+								<span class="ml-5">Le <b>constructeur</b> est une méthode qui initialise l'objet avec des paramètres par défaut</span><br>
+								<pre class="mb_0 mx-2"><code class="language-js">class Rectangle {
+	constructor(hauteur, largeur){
+		this.hauteur = hauteur;
+		this.largeur = largeur;
+	}
+
+	get area(){
+		return this.calculArea();
+	}
+
+	calculArea(){
+		return this.hauteur * this.largeur;
+	}
+}
+
+let CalculRectangle = new Rectangle(50, 30);
+
+console.log(CalculRectangle.area);</code></pre>			
+
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js30">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+									30 - API EXTERNE
+								</button>
+							</h2>
+						</div>
+						<div id="collapse31" class="collapse" aria-labelledby="js30"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-5"><i class="fas fa-share fa-sm"></i> A l'aide de l'API ipapi, afficher un paragraphe avec l'adresse IP de l'utilisateur ainsi que son code postal et / ou sa ville.</span><br>
+								<pre class="mb_0 mx-2"><code class="language-js">$(function(){			
+	$.getJSON('https://ipapi.co/json/', function(data){
+		console.log(data.ip)
+		console.log(data.city)
+		$("&#60;p&#62; Votre adresse ip est : " + data.ip + "&#60;br&#62;" + 
+		"Vous êtes dans la ville de " + data.city + "." + "&#60;/p&#62;").appendTo("#message");
+	})
+})</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js31">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+									31 - API MAP
+								</button>
+							</h2>
+						</div>
+						<div id="collapse32" class="collapse" aria-labelledby="js31"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+									<pre class="mb_0 mx-2"><code class="language-js">let osmUrl = "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+	osmAttrib = '&copy; &#60;a href="https://www.openstreetmap.org"&#62;OpenStreetMap&#60;/a&#62;',
+	osm = L.tileLayer(osmUrl, {
+			maxZoom: 18, 
+			attribution: osmAttrib
+		});
+
+let map = L.map("map").setView([44.845423, -0.570373], 10).addLayer(osm);
+
+let marker = L.marker([44.842453, -0.582621]).addTo(map);
+let marker2 = L.marker([44.801911, -0.585159]).addTo(map);</code></pre>
+									
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js32">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+									32 - SLICK SLIDER
+								</button>
+							</h2>
+						</div>
+						<div id="collapse33" class="collapse" aria-labelledby="js32"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="mx-2"><i class="fas fa-sign-in-alt fa-sm"></i> Créer un diaporama de 350px/280px</span><br>
+								<span class="mx-2"><i class="fas fa-sign-in-alt fa-sm"></i> Animer le diaporama que lorsque je clique sur les fleches next et prev</span>
+								<pre class="mb_0 mx-2"><code class="language-html">​ ​&#60;div class="new-diaporama pad w-800"&#62;
+	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
+	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
+	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
+&#60;/div&#62;</code></pre><br>
+							<pre class="mb_0 mx-2"><code class="language-js">$(function(){
+	$(".diaporama").slick({
+		autoplay: true,
+		autoplaySpeed: 1000,
+		dots: true,
+		focusOnSelect: true,
+	});
+});
+
+$(function(){
+	$(".long-diaporama").slick({
+		autoplay: true,
+		autoplaySpeed: 1000,
+		dots: true,
+		focusOnSelect: true,
+		fade: true
+	});
+});
+
+$(function(){
+	$(".new-diaporama").slick();
+});</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js33">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+									REVISION - SLIDER MAISON
+								</button>
+							</h2>
+						</div>
+						<div id="collapse34" class="collapse" aria-labelledby="js33"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="mx-1">Dans le HTML:</span>
+								<pre class="mb_0 mx-2"><code class="language-html">&#60;div id="diaporama"&#62;&#60;/div&#62;</code></pre><br>
+										
+								<span class="mx-1">Dans le CSS:</span>
+								<pre class="mb_0 mx-2"><code class="language-css">#diaporama{
+	width: 100%;
+	height: 350px;
+	background: url("https://placehold.it/1980x350?text=IMG1") no-repeat center top;
+	background-size: cover;
+	transition: 1s;
+}</code></pre><br>
+
+								<span class="mx-1">Dans le JS:</span>
+								<pre class="mb_0 mx-2"><code class="language-js">let diaporama = document.getElementById("diaporama");
+//let diaporame = document.querySelector("#diaporama"); equivalent
+
+let imgBg = [
+	'url("https://placehold.it/1980x350?text=testt2")',
+	'url("https://placehold.it/1980x350?text=IhelloG3")',
+	'url("https://placehold.it/1980x350?text=IefevfeG4")'
+];
+
+// On récupère l'url par défaut
+let imgStart = window.getComputedStyle(diaporama).getPropertyValue("background-image");
+
+// On push l'image par défaut dans le tableau
+imgBg.push(imgStart);
+console.log(imgBg);
+
+//On crée l'animation toutes les 1,5 secondes
+let i =0;
+let animation = setInterval(function() {
+	diaporama.style.backgroundImage = imgBg[i];
+	i++;
+	if(i === imgBg.length){
+		i = 0;
+	}
+	console.log(i);
+}, 1500);</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js34">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse35" aria-expanded="false" aria-controls="collapse35">
+									DATA_PICKER
+								</button>
+							</h2>
+						</div>
+						<div id="collapse35" class="collapse" aria-labelledby="js34"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="ml-5 text-success"><i class="fas fa-share fa-sm"></i> <b>Méthode à appliquer:</b></span><br>
+								<ol class="mt-1">
+									<li class="mt-1"><b>Récupérer le datepicker.fr</b> (aller dans la doc de datepicker et rechercher la partie "localization") et mettre le fichier dans le dossier js (et faire le link);</li>
+									<li class="mt-1"><b>Mettre du style</b> dans le datepicker :</li>
+										<ul class="list-unstyled ml-2">
+											<li>* cliquer sur download dans la page d'accueil de jQuery</li>
+											<li>* aller dans la page CDN ("https://code.jquery.com/")</li>
+										</ul>
+									<li class="mt-1">Pour récupérer la <b>value</b>, pensez à mettre un <b>ID au form</b> (c'est depuis cet ID que l'on va faire l'écoute)</li>
+								</ol>
+
+								<span class="ml-2"><i class="fas fa-share fa-sm"></i> Dans le html:</span>
+								<pre class="mb_0"><code class="language-html">&#60;form action="" id="valid"&#62;
+	&#60;label for="monAgendaDepart"&#62;Date de départ :
+		&#60;input type="text" name="datepicker" id="monAgendaDepart" data-date-format="mm/dd/yyyy"&#62;
+	&#60;/label&#62;
+	&#60;label for="monAgendaArrivee"&#62;Date d'arrivée :
+		&#60;input type="text" name="datepicker" id="monAgendaArrivee" data-date-format="mm/dd/yyyy"&#62;
+	&#60;/label&#62;
+	&#60;label for="valid"&#62;
+		&#60;input type="submit" name="valid" value="Valider"&#62;
+	&#60;/label&#62;
+&#60;/form&#62;</code></pre><br>
+								<span class="ml-2"><i class="fas fa-share fa-sm"></i> Dans le js:</span>
+								<pre class="mb_0"><code class="language-js">$(function () {
+	$("#monAgendaDepart").datepicker($.datepicker.regional["fr"]);
+	$("#monAgendaArrivee").datepicker($.datepicker.regional["fr"]);
+
+	$("#valid").on("submit", function (e) {
+		e.preventDefault();
+
+		let $depart = $('#monAgendaDepart'),
+		$arrivee = $('#monAgendaArrivee');
+		console.log($depart.val());
+		console.log($arrivee.val());
+	});
+});</code></pre>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js35">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse36" aria-expanded="false" aria-controls="collapse36">
+									Compteur dynamique de projets réalisés
+								</button>
+							</h2>
+						</div>
+						<div id="collapse36" class="collapse" aria-labelledby="js35"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+									<span class="mx-2"><b>Enoncé exercice</b></span><br>
+
+									<p class="mx-1 pt-1 mb_0">
+										Nous souhaitons mettre en place un compteur de projets qui s'actualise tout seul toutes les secondes.<br>
+										Nous partons des données suivantes :
+									</p>
+									<ul class="list-unstyled ml-3">
+										<li>* 674 projets ont été réalisés au 31 juillet 2018, et ce, depuis le début de l'activité de l'entreprise le 1er janvier 2011;<br>
+											<i class="fas fa-hand-point-right fa-xs ml-5"></i> Ainsi, l'entreprise effectue une moyenne de 2 projets par semaine.</li>
+										<li>* On actualisera le compteur toutes les 10 sec.</li>
+									</ul>
+								
+									<p class="mx-1 pt-1 mb_0">
+										On utilise l'objet Window pour attendre le chargement de la page, puis nous déclancherons notre script. <br><br>
+										
+										Indices :
+									</p>
+									<ol class="ml-3">
+										<li>voir l'objet Date()</li>
+										<li>utiliser setInterval</li>
+										<li>utiliser l'objet Math() pour arrondir</li>
+									</ol>
+									<pre class="mb_0"><code class="language-js">window.onload = function(){
+	// Je vous donne la fonction pour mettre des espaces sur les dizaines (ex: 1000 devient 1 000)
+	var numberWithSpaces = function (x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+	};
+
+	// EXERCICE 1 : Votre code commence ici
+
+let dayDiff = (d1, d2) => {
+	d1 = d1.getTime() / 86400000; // nb de sec par jour
+	d2 = d2.getTime() / 86400000;
+	return new Number(d2 - d1).toFixed(0) // arrondi 
+};
+
+let projets = () => {
+	let date = new Date('2018-7-31');
+	let now  = new Date();
+	let number = 674;
+	let increment = 2;
+	let totalDay = dayDiff(date, now);
+	console.log(totalDay);
+
+	let incrementTotal = Math.round(totalDay / 7 * increment + number);
+	console.log(incrementTotal);
+
+	document.getElementById('projets').innerHTML = numberWithSpaces(incrementTotal);
+};
+
+setInterval(projets, 10000);</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js36">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse37" aria-expanded="false" aria-controls="collapse37">
+									Ajouter et/ou supprimer des éléments d'un tableau
+								</button>
+							</h2>
+						</div>
+						<div id="collapse37" class="collapse" aria-labelledby="js36"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								<span class="mx-2"><b>Enoncé exercice</b></span><br>
+								<ol class="mx-1 pt-1 mb_0">
+									<li>A partir du tableau suivant, vous devez injecter dans le DOM un tableau HTML</li>
+									<li>En haut de page de votre document, vous créez deux boutons</li>
+									<li>Un bouton pour ajouter un jeu permettant à l'utilisateur de rentrer le nom du jeu, la plateforme et la date de sortie</li>
+									<li>Un bouton qui permet de supprimer un jeu en entrant son index/clé ou son nom</li>
+									( PS: utilisez prompt() )
+								</ol>
+
+								<pre class="mb_0"><code class="language-html">&#60;body&#62;
+&#60;button id="add"&#62;Ajouter un jeu&#60;/button&#62;
+&#60;button id="delete"&#62;Supprimer un jeu&#60;/button&#62;
+&#60;script type="text/javascript" src="js/app.js"&#62;&#60;/script&#62;
+&#60;/body&#62;</code></pre>
+
+							<pre class="mb_0"><code class="language-js">var mesJeux = [{
+	1: "Mario",
+	"Plateforme": "Nintendo",
+	"Date de sortie": "01/06/1983"
+}, {
+	2: "Zelda",
+	"Plateforme": "Nintendo",
+	"Date de sortie": "21/02/1983"
+}, {
+	3: "Kirbi",
+	"Plateforme": "Nintendo",
+	"Date de sortie": "27/04/1992"
+}];
+// https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector
+var body = document.querySelector('body'); // On stock le body dans une var
+// https://developer.mozilla.org/fr/docs/Web/API/Element/insertAdjacentHTML
+body.insertAdjacentHTML('beforeend', '&#60;table&#62;'); // on ajoute le début du tableau juste après l'ouverture du body
+
+var table = document.querySelector('table'); // On stocke le tableau dans une var
+
+table.insertAdjacentHTML('afterbegin', '&#60;thead&#62;'+
+											'&#60;tr&#62;' +
+												'&#60;th&#62;Numéro&#60;/th&#62;'+
+												'&#60;th&#62;Nom du jeu&#60;/th&#62;'+
+												'&#60;th&#62;Plateforme&#60;/th&#62;'+
+												'&#60;th&#62;Date de sortie&#60;/th&#62;'+
+											'&#60;/tr&#62;'+
+										'&#60;/thead&#62;');
+var thead = document.querySelector('thead');
+
+thead.insertAdjacentHTML('afterend', '&#60;tbody&#62;&#60;/tbody&#62;');
+body.insertAdjacentHTML('beforeend', '&#60;/table&#62;'); // On ferme le tableau juste avant la fin
+
+// var tbody = document.querySelector('tbody');
+
+// for(var i = 0; i &#60; mesJeux.length; i++){
+
+// 	tbody.insertAdjacentHTML('beforeend', '&#60;tr&#62;' +
+// 												'&#60;td&#62;' + (i+1) + '&#60;/td&#62;' +
+// 												'&#60;td&#62;' + mesJeux[i][(i+1)] + '&#60;/td&#62;' +
+// 												'&#60;td&#62;' + mesJeux[i]['Plateforme'] + '&#60;/td&#62;' +
+// 												'&#60;td&#62;' + mesJeux[i]['Date de sortie'] + '&#60;/td&#62;' +
+// 										  '&#60;/tr&#62;');
+// }
+
+
+/*
+	Fonction de traitement pour ajouter la liste dans le dom, 
+	supprimer un élément et ajouter un élément
+*/
+var tbody = document.querySelector('tbody');
+var listAllGames = (startListe = 0, idOrNameToDelete = '', gameToAdd = '') =&#62; {
+	var nbrElement = document.getElementsByTagName('tbody')[0].childNodes;
+	console.log(mesJeux);
+	if(startListe === 1){
+		for(var i = 0; i &#60; mesJeux.length; i++){
+			tbody.insertAdjacentHTML('beforeend', '&#60;tr id="' + (i+1) + '"&#62;' +
+												'&#60;td class="number"&#62;' + (i+1) + '&#60;/td&#62;' +
+												'&#60;td class="name"&#62;' + mesJeux[i][(i+1)] + '&#60;/td&#62;' +
+												'&#60;td&#62;' + mesJeux[i]['Plateforme'] + '&#60;/td&#62;' +
+												'&#60;td&#62;' + mesJeux[i]['Date de sortie'] + '&#60;/td&#62;' +
+											'&#60;/tr&#62;');
+		}
+	}else if(idOrNameToDelete !== ''){
+		var findGame = false;
+		console.log(idOrNameToDelete);
+		for(var i = 0; i &#60; nbrElement.length; i++){
+			if(!findGame){
+				if(idOrNameToDelete === nbrElement[i].id || idOrNameToDelete === nbrElement[i].childNodes[1].textContent){
+					console.log('trouvé');
+					tbody.removeChild(document.getElementById(nbrElement[i].id));
+					renameID(nbrElement);
+					findGame = true;
+					break;
+				}
+			}
+		}
+
+		// Si je n'ai pas trouvé de jeu
+		if(!findGame){
+			alert('Aucun jeu ne correspond ! ');
+		}
+	}else if(gameToAdd !== ''){
+		console.log(nbrElement.length);
+		tbody.insertAdjacentHTML('beforeend', '&#60;tr id="' + (nbrElement.length + 1) + '"&#62;' +
+												'&#60;td class="number"&#62;' + (nbrElement.length + 1) + '&#60;/td&#62;' +
+												'&#60;td class="name"&#62;' + gameToAdd[0].name + '&#60;/td&#62;' +
+												'&#60;td&#62;' + gameToAdd[0].plateforme + '&#60;/td&#62;' +
+												'&#60;td&#62;' + gameToAdd[0].date + '&#60;/td&#62;' +
+											'&#60;/tr&#62;');
+		console.log('jeu ajouté');
+	}
+};
+listAllGames(1); // fonction pour ajouter la liste de départ
+
+/*
+	Fontion d'ajout et de suppression au click
+*/
+
+var addGame = () =&#62; {
+	// Définir les prompts
+	var name = prompt('Nom du jeu');
+	var plateforme = prompt('Sur quelle plateforme');
+	var date = prompt('Date de sortie', '&#60;format : JJ/MM/AAAA&#62;');
+	// ------------
+	// Vérifier si les valeurs ne sont pas vides
+	if(name == '' || plateforme == '' || date == ''){
+		// Si un champs n'est pas rempli j'averti l'utilisateur et je relance la fonction
+		alert('vous devez remplir tous les champs');
+		addGame();
+	}else{
+		var ObjAddGame = [{
+			'name' : name,
+			'plateforme' : plateforme,
+			'date' : date
+		}];
+		listAllGames('', '', ObjAddGame ); // Appel de la fonction d'ajout
+	}
+};
+
+var deleteGame = (e) =&#62; {
+	var deleteByIdOrName = prompt('Entrez l\'id ou le nom du jeu à supprimer');
+	listAllGames('', deleteByIdOrName);	
+};
+
+// Fonction qui renomme les id
+
+var renameID = (nbrElement) =&#62; {
+	for (var i = 0; i &#60; nbrElement.length; i++) {
+		nbrElement[i].id = i + 1;
+		nbrElement[i].childNodes[0].textContent = nbrElement[i].id;
+	}
+};
+
+// Écoute sur les boutons pour édclancher les fonctions addGame et deleteGame
+var btnAdd = document.querySelector('#add');
+var btnDelete = document.querySelector('#delete');
+btnAdd.addEventListener('click', addGame);
+btnDelete.addEventListener('click', deleteGame);</code></pre>
+								
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js37">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse38" aria-expanded="false" aria-controls="collapse38">
+									Jeu sur les classes : Pompier VS elFuego
+								</button>
+							</h2>
+						</div>
+						<div id="collapse38" class="collapse" aria-labelledby="js37"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+
+								<pre class="mb_0"><code class="language-js">class Pompier{
+// Permet de créer les paramètres par défaut
+	constructor(nom, force, vie)
+	{
+		this.nom    = nom;
+		this.force  = force;
+		this.vie    = vie;
+	}
+
+	// Méthode pour attaquer le feu
+	jetDeau(feu)
+	{
+		// Si la vie du pompier est supérieur à 0
+		// alors je peux lancer une attaque
+		// sinon le combat est fini
+		if(this.vie > 0){
+			// Je stocke dans une variable la vie du feu
+			// Je mets ensuite à jour la vie du feu
+			let resultatCombat = feu.vie - this.force;
+			feu.vie = resultatCombat <= 0 ? 0 : resultatCombat; 
+			// ecriture ternaire
+			// si resultatCombat est inferieur ou égal à 0, ALORS (?) je mets 0 à la vie du feu 
+			// SINON (:) on met resultatCombat à la vie
+			return resultatCombat;
+		}
+	}
+}
+
+class Feu{
+	// Permet de créer les paramètres par défaut
+	constructor(nom)
+	{
+		this.nom        = nom;
+		this.puissance  = Math.floor(Math.random() * Math.floor(60));
+		this.vie        = 200;
+	}
+
+	// Methode pour attaquer le pompier
+	bruler(pompier)
+	{
+		if(this.vie > 0){
+			// Je stocke dans une variable la vie du pompier
+			// Je soustrais la puissance du feu et la brulure() à la vie du pompier
+			let resultatCombat = pompier.vie - this.puissance - this.brulure();
+			pompier.vie = resultatCombat <= 0 ? 0 : resultatCombat; 
+			// ecriture ternaire
+			// si resultatCombat est inferieur ou égal à 0, ALORS (?) je mets 0 à la vie du pompier 
+			// SINON (:) on met resultatCombat à la vie
+			
+			return resultatCombat;
+		}
+		return "";
+	}
+	// Brulure est lancée aléatoirement grace pà la méthode getRandomInt()
+	brulure()
+	{
+		let numberRandom = this.getRandomInt(5);
+		// Si le random est supérieur ou égal à 3, je retourne un chiffre
+		// que je reprends dans l'attaque bruler()
+		if(numberRandom >= 3){
+			return Math.floor(this.puissance / 4);
+		}else{
+			return 0;
+		}
+	}
+
+	// Methode pour calculer un chiffre aléatoire entre 0 et le nombre max
+	// que l'on souhaite
+	getRandomInt(max)
+	{
+		return Math.floor(Math.random() * Math.floor(max));
+	}
+}
+
+// console.log(Math.random());
+// console.log(Math.floor(60));
+// console.log(Math.floor(Math.random() * Math.floor(60)));
+
+// let Martin = new Pompier("Martin", 40, 100);
+// let ElFuego = new Feu("ElFuego");
+// console.log(Martin);
+// console.log(ElFuego);
+
+// console.log("Tour 1 (le pompier attaque le feu)---------------");
+// console.log("Résultat de l'attaque : " + Martin.jetDeau(ElFuego));
+
+// console.log(Martin);
+// console.log(ElFuego);
+
+// console.log("Tour 2 (le feu attaque le pompier)---------------");
+// console.log("Résultat de l'attaque : " + ElFuego.bruler(Martin));
+
+// console.log(Martin);
+// console.log(ElFuego);
+
+let Martin = new Pompier("Martin", 40, 100);
+let ElFuego = new Feu("ElFuego");
+
+let i = 1
+while (Martin.vie > 0 && ElFuego.vie > 0){
+	console.log(Martin);
+	console.log(ElFuego);
+
+	console.log("Tour " + i + " (le pompier attaque le feu)---------------");
+	console.log("Résultat de l'attaque : " + Martin.jetDeau(ElFuego));
+
+	console.log(Martin);
+	console.log(ElFuego);
+	i++;
+
+	console.log("Tour " + i + " (le feu attaque le pompier)---------------");
+	console.log("Résultat de l'attaque : " + ElFuego.bruler(Martin));
+
+	console.log(Martin);
+	console.log(ElFuego);
+	i++;
+
+	if(Martin.vie === 0){
+		console.log("Le pompier est mort ! ☠️");
+	}
+	if(ElFuego.vie === 0){
+		console.log("Le feu est mort ! ☠️");
+	}
+
+}</code></pre><br>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="card">
+						<div class="card-header-resp bg-dark" id="js38">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse39" aria-expanded="false" aria-controls="collapse39">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse39" class="collapse" aria-labelledby="js38"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js39">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse40" aria-expanded="false" aria-controls="collapse40">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse40" class="collapse" aria-labelledby="js39"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js40">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse41" aria-expanded="false" aria-controls="collapse41">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse41" class="collapse" aria-labelledby="js40"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js41">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse42" aria-expanded="false" aria-controls="collapse42">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse42" class="collapse" aria-labelledby="js41"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js42">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse43" aria-expanded="false" aria-controls="collapse43">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse43" class="collapse" aria-labelledby="js42"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js43">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse44" class="collapse" aria-labelledby="js43"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js44">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse45" aria-expanded="false" aria-controls="collapse45">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse45" class="collapse" aria-labelledby="js44"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js45">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse46" aria-expanded="false" aria-controls="collapse46">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse46" class="collapse" aria-labelledby="js45"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js46">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse47" aria-expanded="false" aria-controls="collapse47">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse47" class="collapse" aria-labelledby="js46"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js47">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse48" aria-expanded="false" aria-controls="collapse48">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse48" class="collapse" aria-labelledby="js47"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js48">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse49" aria-expanded="false" aria-controls="collapse49">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse49" class="collapse" aria-labelledby="js48"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js49">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse50" aria-expanded="false" aria-controls="collapse50">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse50" class="collapse" aria-labelledby="js49"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header-resp bg-dark" id="js50">
+							<h2 class="mb-0 fz-titre-resp">
+								<button class="btn btn-link a-link text-left collapsed" type="button" data-toggle="collapse"
+									data-target="#collapse51" aria-expanded="false" aria-controls="collapse51">
+									Collapsible Group Item #3
+								</button>
+							</h2>
+						</div>
+						<div id="collapse51" class="collapse" aria-labelledby="js50"
+							data-parent="#accordion-javascript">
+							<div class="card-body-resp">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+								squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+								quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+								squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+								craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+								butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+								nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container-fluid">
+		<footer>
+			<div class="row no-gutter">
+				<div class="col-12 col0pad bg-perso hauteur-100 w-100 d-flex align-items-center justify-content-center">
+<h4 class="text-white center text-center h4-size">FICHES COURS JS PHP - LA PHILOMATIQUE</h4>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+
+	<!-- CDN jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- CDN jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<!-- CDN jQuery popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+		integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+	<!-- CDN Bootstrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+
+	<script src="js/prism.js"></script>
+	<!-- <script src="js/highlight/highlight.pack.js"></script> -->
+	<script src="js/app.js"></script>
+</body>
+
+</html>

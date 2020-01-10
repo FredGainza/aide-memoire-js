@@ -563,15 +563,15 @@ console.log(mesJeux);</code></pre>
 								<div class="encart py-2">
 									<span class="titre mx-3">ENONCE EXERCICE</span><br>
 									<span class="mx-3">Réaliser une fonction hello() permettant à l'utilisateur de :</span><br>
-									<span class="mx-4">1 - Saisir son prénom dans un "Prompt" </span><br>
-									<span class="mx-4">2 - Retourner à l'utilisateur : Bonjour [PRENOM], Quel age as tu ? </span><br>
-									<span class="mx-4">3 - L'utilisateur peut saisir son age </span><br>
+									<span class="mx-4">1 - Saisir son prénom dans un "prompt" </span><br>
+									<span class="mx-4">2 - Retourner à l'utilisateur : Bonjour [PRENOM], quel âge as tu ? </span><br>
+									<span class="mx-4">3 - L'utilisateur peut saisir son âge </span><br>
 									<span class="mx-4">4 - Retourner à l'utilisateur : Tu es donc né en [ANNÉE DE NAISSANCE] </span><br>
 									<span class="mx-4">5 - Afficher ensuite un récapitulatif dans la page : </span><br>
 									<span class="mx-4">	Bonjour [PRENOM], tu as [AGE] !</span><br><br>
 									<pre class="mb_0 mx-2"><code class="language-js">prompt('Hello dit moi quelque chose !');
 var message = prompt('Hello dit moi quelque chose !', 'Tu es le meilleur !!!');
-console.log(message);</code></pre><br><br>
+console.log(message);</code></pre><br>
 
 									<span class="titre mx-3">--- MA VERSION ---</span><br>
 									<pre class="mb_0 mx-2"><code class="language-js">var hello = () =>{
@@ -584,7 +584,7 @@ console.log(message);</code></pre><br><br>
 	document.write("Bonjour " + prenom + ", tu as " + age +" ans !");
 }
 
-hello();</code></pre><br><br>
+hello();</code></pre><br>
 
 									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
 									<pre class="mb_0 mx-2"><code class="language-js">var hello = () =>{
@@ -685,7 +685,7 @@ while (i &#60; 10) {
 
 								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>DO WHILE</b> (FAIRE... TANT QUE)</b></span><br>
 								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> Cette instruction crée une <b>boucle</b> qui s'exécute <b>tant que la condition est vraie</b>.</span><br>
-								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La <b>condition</b> est <b>évaluée après avoir exécuté une itération</b> de boucle,nce qui fait que cette boucle sera exécutée au moins une fois.</span>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La <b>condition</b> est <b>évaluée après avoir exécutée une itération</b> de boucle, ce qui fait que cette boucle sera exécutée au moins une fois.</span>
 								<pre class="mb_0"><code class="language-js">var result = "";
 var i = 0;
 
@@ -697,7 +697,7 @@ result = result + i;
 console.log(result); // "12345"</code></pre><br>
 
 								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>FOR</b></b></span><br>
-								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La boucle <b>for()</b> prend <b>3 paramètres</b>, séparées par un ";" :</span>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> La boucle <b>for()</b> prend <b>3 paramètres</b>, séparés par un ";" :</span>
 								<ul class="ml-5">
 									<li><b>Initialisation</b> de la variable i</li>
 									<li>La <b>condition</b> i < ou > à une valeur</li>
@@ -710,7 +710,7 @@ for (var i = 0; i &#60; 9; i++) {
 console.log(str); // "012345678"</code></pre><br>
 
 								<span class="ml-2"><i class="fas fa-caret-right"></i> <b>FOR IN</b></b></span><br>
-								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> for (je <b>nomme une variable</b> dans l'objet)</span><br>
+								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> for : je <b>nomme une variable</b> dans l'objet</span><br>
 								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> le for in permet le <b>parcours d'objet</b></span><br>
 								<span class="ml-3"><i class="far fa-arrow no-gutter-alt-circle-right"></i> dans un for in <b>pas besoin d'incrémenter</b> la boucle</span><br><br>
 
@@ -938,7 +938,7 @@ if(!isEmailInArray){                       // !isEmailInArray équivaut à isEma
 						<div id="collapse16" class="collapse" aria-labelledby="js15"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<span class="ml-2"><i class="fas fa-caret-right"></i> <span class="text-success"><b> Le DOM</b></span></span><br><br>
+								<span class="ml-2"><i class="fas fa-caret-right"></i> <span class="text-success mt-2"><b> Le DOM</b></span></span><br><br>
 								<span class="ml-2"><i class="far fa-arrow no-gutter-alt-circle-right"></i><b>DOM : Document Object Model</b></span><br>
 								<span class="ml-5"><i class="far fa-arrow no-gutter-alt-circle-right"></i> - Il s'agit de la représentation (sous la forme d'une arborescence) <b>d'une page html sous forme d'objet js</b></span><br>
 								<span class="ml-5"><i class="far fa-arrow no-gutter-alt-circle-right"></i> - C'est une <b>représentation en noeud d'une page web</b></span><br>
@@ -1005,11 +1005,11 @@ var paragraphes = document.querySelectorAll("p");
 									<span class="ml-5"> On peut alors lui ajouter un id, un textContent...</span><br><br>
 									<span class="ml-3"><b>2.</b> On <b>ajoute cet élément au DOM</b> :</span><br>
 							
-									<span class="ml-3"> - soit avec la fonction <b>appendChild()</b></span><br>
-										<span class="ml-5"> de la forme document.PARENT.appendChild(ELEMENT)</span><br>
+									<span class="ml-3"> - soit avec la fonction <b>appendChild() de la forme</b></span><br>
+										<span class="ml-5"> document.PARENT.appendChild(ELEMENT)</span><br>
 										<span class="ml-5"> (l'élément est alors ajouté comme enfant du parent, en dernière position)</span><br>
-										<span class="ml-3"> - soit avec la fonction <b>insertAdjacentHTML()</b></span>
-										<span class="ml-3"> de la forme element.insertAdjacentHTML(position, text);</span><br>
+										<span class="ml-3"> - soit avec la fonction <b>insertAdjacentHTML() de la forme</b></span>
+										<span class="ml-3"> element.insertAdjacentHTML(position, text);</span><br>
 										<span class="ml-4"> position : beforebegin, afterbegin, beforeend, afterend</span><br>
 										<pre class="mb_0"><code class="language-js">body.insertAdjacentHTML("beforeend", "&#60;table&#62;");</code></pre><br>
 						
@@ -1053,7 +1053,7 @@ document.body.appendChild(h1);  </code></pre>
 <span class="mx-4">Ajout du H1 dans le DOM</span><br>
 <span class="mx-4">Ajout du lien dans le DOM</span><br>
 <span class="mx-4">Changer la couleur du lien</span><br>
-<span class="mx-4">Ne pas surligner le lien"</span><br><br><br>
+<span class="mx-4">Ne pas surligner le lien"</span><br>
 
 									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
 									<pre class="mb_0 mx-2"><code class="language-js">var h1 = document.createElement("h1");
@@ -1088,7 +1088,7 @@ a.style.textDecoration = "none";</code></pre>
 						<div id="collapse18" class="collapse" aria-labelledby="js17"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<span class="ml-2 mt-2"> Les <b>évènements</b> permettent de <b>déclencher des fonctions lors d'une action utilisateur</b></span><br><br>
+								<span class="ml-2 mt-3"> Les <b>évènements</b> permettent de <b>déclencher des fonctions lors d'une action utilisateur</b></span><br><br>
 								<span class="ml-3"><i class="fas fa-caret-square-right text-danger"></i> Il existe <b>plusieurs types</b> d'évènements</span><br><br>
 								<ul>
 									<li><b>1. Les évènements : MOUSE (souris)</b></li>
@@ -1129,9 +1129,9 @@ document.body.appendChild(p);</code></pre><br>
 								<pre class="mb_0"><code class="language-js">var changeColor = (color) => {
 	p.style.color = color;
 }</code></pre><br>
-								<span class="ml-4"><i class="far fa-check-circle text-success"></i> <b>On définit un écouteur</b></span><br><br>
+								<span class="ml-4"><i class="far fa-check-circle text-success"></i> <b>On définit un écouteur</b></span><br>
 								<span class="ml-5"><i class="fas fa-sign-in-alt fz-80"></i> <b>lorsqu'on clique sur le paragraphe, la fonction changeColor() s'exécute</b> avec la couleur définie en paramètre</span>
-								<pre class="mb_0"><code class="language-js">p.addEventListener("click", function() { changeColor("tomato") });</code></pre><br><br>
+								<pre class="mb_0"><code class="language-js">p.addEventListener("click", function() { changeColor("tomato") });</code></pre><br>
 								<span class="ml-5"><i class="fas fa-sign-in-alt fz-80"></i> De manière générale, la syntaxe est la suivante</span>
 								<pre class="mb_0"><code class="language-js">target.addEventListener(type, listener);
 	// (avec listener une function())</code></pre>
@@ -1445,7 +1445,7 @@ document.addEventListener('keydown', (event) => {
 						<div id="collapse21" class="collapse" aria-labelledby="js20"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<span class="ml-3 mt-2 font-weight-bold"><i class="fas fa-caret-square-right fa-lg text-danger"></i> 1. DECLENCHER UN EVENEMENT : <span class="text-danger font-weight-bold fz-120">setTimeout()</span></span><br><br>
+								<span class="ml-3 mt-3 font-weight-bold"><i class="fas fa-caret-square-right fa-lg text-danger"></i> 1. DECLENCHER UN EVENEMENT : <span class="text-danger font-weight-bold fz-120">setTimeout()</span></span><br><br>
 								<pre class="mb_0"><code class="language-js">setTimeout(function(){ alert("Hello"); }, 3000);</code></pre><br>
 								<span class="ml-2"><i class="fa fa-check-circle fa-sm"></i> <b>2 paramètres</b> à setTimeout() :</span>
 								<ul class="list-unstyled mb_0">
@@ -1507,8 +1507,8 @@ var count = setInterval(compteur, 1000);</code></pre>
 						<div id="collapse22" class="collapse" aria-labelledby="js21"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<span class="ml-1 text-danger mt-2"><i class="fas fa-fan"></i> <b>PRINCIPE GENERAL</b></span><br><br>
-								<span class="ml-3 text-success"><b>Utilisation des sélecteurs CSS pour sélectionner les éléments html</b></span><br><br>
+								<span class="ml-1 text-danger mt-3"><i class="fas fa-fan"></i> <b>PRINCIPE GENERAL</b></span><br><br>
+								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Utilisation des sélecteurs CSS pour sélectionner les éléments html</b></span><br><br>
 								<span class="ml-5"><i class="fab fa-slack-hash"></i> Pour <b>sélectionner un élément HTML</b> en jQuery, il <b>suffit de mentionner le sélecteur CSS associé</b> à cet élément dans notre méthode $()</span><br><br>
 					
 								<span class="ml-3">Ainsi,</span><br>
@@ -1551,11 +1551,9 @@ console.log("Document chargé");
 console.log($("span", $p)); // Sélectionne un span qui est dans un paragraphe</code></pre><br>
 								<span class="ml-1 text-danger"><i class="fas fa-fan"></i> <b>LES SELECTEURS</b></span><br><br>
 								<span class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Les sélecteurs CSS</b></span>
-								<div class="ml-4">
 									<pre class="mb_0"><code class="language-js">$('p'); // je sélectionne tous les paragraphes
-	$('.maClasse'); // je sélectionne les éléments ayant .maClasse pour classe
-	$('#monId'); // je sélectionne l'élément qui possède l'identifiant #monId</code></pre>
-								</div><br>
+$('.maClasse'); // je sélectionne les éléments ayant .maClasse pour classe
+$('#monId'); // je sélectionne l'élément qui possède l'identifiant #monId</code></pre><br>
 	
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Méthodes pour affiner la sélection : has(), filter(), not(), first(), last() et eq()</b></p>
 
@@ -1563,31 +1561,35 @@ console.log($("span", $p)); // Sélectionne un span qui est dans un paragraphe</
 									<span class="ml-3 text-info"><b>Méthode has()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que les <b>éléments d’une sélection</b> initiale <b>qui possèdent</b> des <b>éléments enfants</b> correspondant au <b>sélecteur</b> passé en argument de cette fonction</span><br>
 									<span class="ml-2"><b>* exemple</b> : sélectionner uniquement les éléments p qui contiennent un span</span>
-									<pre class="mb_0"><code class="language-js"> $("p").has("span");</code></pre><br>
 								</div>
+									<pre class="mb_0"><code class="language-js"> $("p").has("span");</code></pre><br>
+								
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode filter()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que les <b>éléments qui satisfont au sélecteur</b> passé en argument de cette fonction</span><br>
 									<span class="ml-2"><b>* exemple</b> : ne sélectionner que les éléments span d’une page qui possèdent un certain attribut class</span>
-									<pre class="mb_0"><code class="language-js">$("span").filter(".souligne")</code></pre><br>
 								</div>
+									<pre class="mb_0"><code class="language-js">$("span").filter(".souligne")</code></pre><br>
+								
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode not()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> <b>Soustraire d’une sélection</b> de départ des <b>éléments</b> qui répondent à un certain <b>critère</b></span><br>
 									<span class="ml-2"><b>* exemple</b> : supprimer les éléments span possédant un certain attribut class d’une sélection</span>
-									<pre class="mb_0"><code class="language-js">$("span").not(".souligne")</code></pre><br>
 								</div>
+									<pre class="mb_0"><code class="language-js">$("span").not(".souligne")</code></pre><br>
+								
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthodes first(), last() et eq()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Ne <b>sélectionne</b> que le <b>premier</b>, le <b>dernier</b>, <b>ou le ième élément</b> d'une sélection de départ</span><br>
 									<span class="ml-2"><b>exemple :</b></span>
+								</div>
 									<pre class="mb_0"><code class="language-js">$("span").first()   // sélectionne le 1er span
-	$("span").last()    // sélectionne le dernier span
-	$("span").eq(1)     // sélectionne le 2éme span</code></pre><br>
-</div>
+$("span").last()    // sélectionne le dernier span
+$("span").eq(1)     // sélectionne le 2éme span</code></pre><br>
+
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Accéder à l'élément parent ou aux ancetres d'un élément en jQuery</b></p>
 								<div class="ml-4">
@@ -1597,10 +1599,9 @@ console.log($("span", $p)); // Sélectionne un span qui est dans un paragraphe</
 									<span class="ml-5"><i class="fas fa-arrow no-gutter-right fa-sm"></i> - On ne va accéder au parent que s'il correspond au sélecteur</span>
 								</div>
 
-								<div class="ml-4">
+
 									<pre class="mb_0"><code class="language-js">$("li").parent()            // cible le parent direct de chaque li 
-$("li").parent("#parents")  // cible le parent direct de chaque li ssi il possède l'id="parents"</code></pre>
-								</div><br>
+$("li").parent("#parents")  // cible le parent direct de chaque li ssi il possède l'id="parents"</code></pre><br>
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode parents()</b></span><br>
@@ -1608,10 +1609,8 @@ $("li").parent("#parents")  // cible le parent direct de chaque li ssi il possè
 									<span class="ml-3"> - Fonctionne comme parent() : filtre la sélection par le sélecteur passé en argument</span>
 								</div>
 
-								<div class="ml-4">
 									<pre class="mb_0"><code class="language-js">$("ul").parents()       // cible les ancetres des ul
-$("ul").parents("div")  // cible les ancetres des ul ssi ils sont dans une div</code></pre>
-								</div><br>
+$("ul").parents("div")  // cible les ancetres des ul ssi ils sont dans une div</code></pre><br>
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> <b>Accéder aux enfants ou descendants</b> d'un élément en jQuery</b></p>
 								
@@ -1619,43 +1618,43 @@ $("ul").parents("div")  // cible les ancetres des ul ssi ils sont dans une div</
 									<span class="ml-3 text-info"><b>Méthode children()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder à l’élément parent (c’est-à-dire à l’ancêtre direct)</b> de l'élément sélectionné</span><br>
 								</div>
-								<div class="ml-4">									
+															
 									<pre class="mb_0"><code class="language-js">$(".conteneur").children()      // cible les enfants des éléments contenant class="conteneur"
-$(".conteneur").children("h1")  // cible que les h1 enfants des éléments contenant class="conteneur"</code></pre>
-								</div><br>
+$(".conteneur").children("h1")  // cible que les h1 enfants des éléments contenant class="conteneur"</code></pre><br>
 
 								<div class="ml-4">
 								<span class="ml-3 text-info"><b>Méthode find()</b></span><br>
 								<span class="ml-3"><i class="fas fa-share"></i> Permet d’<b>accéder aux descendants</b> d’un élément html</span><br>
 								<span class="ml-3">Si sélecteur passé en argument, il filtre la sélection</span>
+								</div>
 
 								<pre class="mb-1"><code class="language-js">$(".souligne").find()      // cible tous les descendants des éléments contenant class="souligne"
 $(".souligne").find("h1")  // cible que les h1 descendants des éléments contenant class="souligne"</code></pre>
 								<span class="ml-3"> <i class="fas fa-info-circle color-red-perso"></i> rq: pour avoir tous les descendants d'un élément, on passe * en argument</span>
 									<pre class="mb_0"><code class="language-js">$("#titre").find("*")       // cible tous les descendants de l'élément id="titre"</code></pre>
-								</div><br>
+								<br>
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Accéder aux éléments frères d'un élément en jQuery</b></p>
 								
-								<span class="ml-5"><i class="fas fa-share"></i>  <b>Remarque</b> : pour tous, possible de passer un sélecteur en argument pour filtrer la sélection</span><br><br>
+								<span class="ml-5"><i class="fas fa-share"></i>  <b>Remarque</b> : pour tous, possible de passer un sélecteur en argument pour filtrer la sélection</span><br>
 								
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode siblings()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'ensemble des éléments frères</b> d’un élément sélectionné</span><br>
-									<pre class="mb_0"><code class="language-js">$(selector).siblings(filter)</code></pre>
-								</div><br>
+								</div>
+									<pre class="mb_0"><code class="language-js">$(selector).siblings(filter)</code></pre><br>
 								
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode next()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'élément frère suivant</b> immédiatement l'élément sélectionné</span><br>
-									<pre class="mb_0"><code class="language-js">$(selector).next(filter)</code></pre>
-								</div><br>
+								</div>
+									<pre class="mb_0"><code class="language-js">$(selector).next(filter)</code></pre><br>
 								
 								<div class="ml-4">
-								<span class="ml-3 text-info"><b>Méthode prev()</b></span><br>
-								<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'élément frère précédent</b> immédiatement l'élément sélectionné</span><br>
-								<pre class="mb_0"><code class="language-js">$(selector).prev(filter)</code></pre>
-								</div><br>
+									<span class="ml-3 text-info"><b>Méthode prev()</b></span><br>
+									<span class="ml-3"><i class="fas fa-share"></i> Permet d'<b>accéder à l'élément frère précédent</b> immédiatement l'élément sélectionné</span><br>
+								</div>
+								<pre class="mb_0"><code class="language-js">$(selector).prev(filter)</code></pre><br>
 
 								<span class="ml-1 text-danger"><i class="fas fa-fan"></i> <b>FONCTIONNEMENT DES METHODES GETTERS ET SETTERS jQuery</b></span><br><br>
 
@@ -1678,9 +1677,10 @@ $(".souligne").find("h1")  // cible que les h1 descendants des éléments conten
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode html()</b></span><br>
 									<span class="ml-3"><i class="fas fa-share fa-sm"></i> Permet d’<b>obtenir le contenu HTML du premier élément</b> d’une sélection <b>ou</b> de <b>définir le contenu HTML de tous les éléments</b> de la sélection;</span><br>
+								</div>
 									<pre class="mb_0"><code class="language-js">$("h1").html()  // html() comme getter
 $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pre><br>
-								</div>
+								
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>Méthode text()</b></span><br>
@@ -1722,27 +1722,23 @@ $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pr
 						<div id="collapse23" class="collapse" aria-labelledby="js22"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Insérer du contenu dans un élément</b></p>
+								<p class="ml-3 text-success mt-3"><b><i class="fas fa-chevron-circle-right"></i> Insérer du contenu dans un élément</b></p>
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>prepend() et append()</b></span><br>
 									<span class="ml-5"><i class="fas fa-share fa-sm"></i> <b>Insérer</b> du contenu <b>en tant que premier (prepend())</b> et <b>dernier enfant (append())</b> d’un élément cible.</span><br>
 									<span class="ml-5">Le <b>contenu à insérer</b> devra être passé <b>en argument</b> de ces méthodes.</span>
 								</div>
 	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">$(selector).append(content,function(index,html))</code></pre>
-									<pre class="mb_0"><code class="language-js">$(".conteneur").append("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62")</code></pre><br>
-								</div>
-
+								<pre class="mb_0"><code class="language-js">$(selector).append(content,function(index,html))</code></pre>
+								<pre class="mb_0"><code class="language-js">$(".conteneur").append("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62")</code></pre><br>
+								
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>prependTo() et appendTo()</b></span><br>
 									<span class="ml-5"><i class="fas fa-share fa-sm"></i> même chose mais syntaxe différente</span><br>
 								</div>
-	
-								<div class="ml-4">
+									
 									<pre class="mb_0"><code class="language-js">$(content).appendTo(selector)</code></pre>
-									<pre class="mb_0"><code class="language-js">$("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62").appendTo(".conteneur");</code></pre>
-								</div><br>
+									<pre class="mb_0"><code class="language-js">$("&#60ul&#62&#60li&#62Element n°1&#60/li&#62&#60li&#62Element n°2&#60/li&#62&#60/ul&#62").appendTo(".conteneur");</code></pre><br>
 
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Insérer du contenu avant ou après un élément</b></p>
@@ -1752,29 +1748,23 @@ $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pr
 									<span class="ml-5">Le <b>contenu à ajouter</b> devra être passé <b>en argument</b>.</span><br>
 								</div>
 	
-								<div class="ml-4">
 									<pre class="mb_0"><code class="language-js"> $(selector).before(content,function(index))</code></pre><br>
-								</div>
-
+								
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>insertBefore() et insertAfter()</b></span><br>
 									<span class="ml-5"><i class="fas fa-share fa-sm"></i> <b>même chose</b> mais syntaxe différente</span><br>
 								</div>
 	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">$(content).insertBefore(selector)</code></pre>
-								</div><br>
+								<pre class="mb_0"><code class="language-js">$(content).insertBefore(selector)</code></pre><br>
 
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Supprimer des éléments et des contenus HTML</b></p>
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>remove()</b></span><br>
 									<span class="ml-5"><i class="fas fa-share fa-sm"></i> La méthode remove() <b>supprime les éléments</b> sélectionnés, <b>y compris tous les nœuds de texte et les enfants</b>.</span><br>
-								</div>
-	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">$(selector).remove()</code></pre>
-								</div><br>
+								</div>	
+								
+								<pre class="mb_0"><code class="language-js">$(selector).remove()</code></pre><br>
 
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> Remplacer des éléments HTML</b></p>
@@ -1785,9 +1775,8 @@ $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pr
 									<span class="ml-5">Elle <b>ne va pas renvoyer la liste des éléments supprimés</b></span><br>
 								</div>
 	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">$(content).replaceAll(selector)</code></pre><br>
-								</div>
+								<pre class="mb_0"><code class="language-js">$(content).replaceAll(selector)</code></pre><br>
+								
 
 								<div class="ml-4">
 									<span class="ml-3 text-info"><b>replaceWith()</b></span><br>
@@ -1799,9 +1788,7 @@ $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pr
 									</ul>
 								</div>
 	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">$(selector).replaceWith(content,function(index))</code></pre>
-								</div><br>
+								<pre class="mb_0"><code class="language-js">$(selector).replaceWith(content,function(index))</code></pre><br>
 
 
 								<p class="ml-3 text-success"><b><i class="fas fa-chevron-circle-right"></i> La méthode jQuery css()</b></p>
@@ -1813,23 +1800,23 @@ $("h2").html(<strong>Nouveau titre</strong>)   // html() comme setter</code></pr
 									</ul>
 								</div>
 	
-								<div class="ml-4">
-									<pre class="mb_0"><code class="language-js">css({“prop1 : valeur”, “prop2 : valeur”})</code></pre>
-								</div><br>
+							
+								<pre class="mb_0"><code class="language-js">css({“prop1 : valeur”, “prop2 : valeur”})</code></pre><br>
 
-								<div class="ml-4">
-									<span class="ml-3"><b>* Ex comme getter</b> : récupère la police et l'affiche</span><br>
-									<pre class="mb_0"><code class="language-js"> let police = $("body").css("font-family");
+								
+								<span class="ml-3"><b>* Ex comme getter</b> : récupère la police et l'affiche</span><br>
+								<pre class="mb_0"><code class="language-js">let police = $("body").css("font-family");
 $("#police").text(police);</code></pre><br>
-								</div>
+							
 	
 								<div class="ml-4">
 									<span class="ml-3"><b>* Ex comme setter</b> : change la police d'écriture</span><br>
+								</div>
 									<pre class="mb_0"><code class="language-js">$("body").css("font-family", "Nunito, Futura, Verdana");
 // Met à jour la valeur du span
 police = $("body").css("font-family");
 $("#police").text(police);</code></pre>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -1849,25 +1836,25 @@ $("#police").text(police);</code></pre>
 								<span class="ml-3 text-info my-2"><b>jQuery fournit des méthodes pour gérer les évènements</b></span><br>
 									<div class="ml-4 mt-2">
 										<span class="font-weight-bold"><i class="fab fa-slack-hash fa-sm color-red-perso"></i> ex : click(), mouseenter(), keyup(), change()</span><br>
-										<span class="ml-5">Ce sont en fait des <b>notations raccourcies de la méthode jQuery on()</b> qui va nous permettre de <b>gérer plusieurs événements</b> au sein d’une même fonction gestionnaire d’événements.</span><br>
+										<span class="ml-3">Ce sont en fait des <b>notations raccourcies de la méthode jQuery on()</b> qui va nous permettre de <b>gérer plusieurs événements</b> au sein d’une même fonction gestionnaire d’événements.</span><br>
 									</div>
 		
 									<div class="ml-4 mt-3">
 										<span class="ml-2"><b>Exemple</b> : pouvoir gérer un événement click sur un paragraphe en changeant le texte de ce paragraphe</span>
+									</div>
 										<pre class="mb_0"><code class="language-js">// v1 
-		$(function(){
-			$("p").click(function(){
-				$(this).text("Paragraphe cliqué");
-		});
-	// v2 (équivalent à v1)
-		$(function(){
-			$("p").on("click", function(){
-				$(this).text("Paragraphe cliqué");
-		});
-	
-	// rq : this fait référence à l’élément qui a initié l’événement, 
-	//      c’est-à-dire l’élément où l’événement a été déclenché.</code></pre>
-									</div><br>
+	$(function(){
+		$("p").click(function(){
+			$(this).text("Paragraphe cliqué");
+	});
+// v2 (équivalent à v1)
+	$(function(){
+		$("p").on("click", function(){
+			$(this).text("Paragraphe cliqué");
+	});
+
+// rq : this fait référence à l’élément qui a initié l’événement, 
+//      c’est-à-dire l’élément où l’événement a été déclenché.</code></pre><br>
 	
 									<div class="ml-4">
 										<span class="ml-3 text-info"><b>La méthode submit()</b></span><br>
@@ -1878,35 +1865,36 @@ $("#police").text(police);</code></pre>
 		
 									<div class="ml-4 mt-3">
 										<span class="ml-2"><b>Exemple</b> : pouvoir gérer un événement click sur un paragraphe en changeant le texte de ce paragraphe</span>
-										<pre class="mb_0"><code class="language-js">$(function() {
-		$("#monFormulaire").submit(function(e) {
-			// Je vais stopper la propagation de l'évènement
-			// Je stoppe le formulaire
-			e.preventDefault();
-	
-			let $lastname = $("#lastname");
-			if($lastname.val().length === 0){
-				$lastname.next().remove();
-				$('&#60div class="invalid"' + $red + 
-					'&#62>Vous n\'avez pas rempli votre nom.&#60/div&#62>')
-					.appendTo($lastname.parent());
-			} else {
-				$lastname.next().remove();
-				$('&#60div class="success"' + $green + 
-					'&#62>Champ valide.&#60/div&#62>')
-					.appendTo($lastname.parent());
-			
-			// Si le formulaire ne comporte pas d'erreur,
-			// on l'efface et on affiche un message de réussite
-	
-			console.log($t.find('.invalid'));
-			if($t.find('.invalid').length === 0) {
-				$t.replaceWith('&#60div class="alert alert-success"&#62>Message ok&#60/div&#62>');
-			}else{
-				$t.prepend('&#60div class="alert alert-danger"&#62>Pas ok&#60/div&#62>')
-		});
-	});</code></pre>
 									</div>
+										<pre class="mb_0"><code class="language-js">$(function() {
+$("#monFormulaire").submit(function(e) {
+	// Je vais stopper la propagation de l'évènement
+	// Je stoppe le formulaire
+	e.preventDefault();
+
+	let $lastname = $("#lastname");
+	if($lastname.val().length === 0){
+		$lastname.next().remove();
+		$('&#60div class="invalid"' + $red + 
+			'&#62>Vous n\'avez pas rempli votre nom.&#60/div&#62>')
+			.appendTo($lastname.parent());
+	} else {
+		$lastname.next().remove();
+		$('&#60div class="success"' + $green + 
+			'&#62>Champ valide.&#60/div&#62>')
+			.appendTo($lastname.parent());
+	
+	// Si le formulaire ne comporte pas d'erreur,
+	// on l'efface et on affiche un message de réussite
+
+	console.log($t.find('.invalid'));
+	if($t.find('.invalid').length === 0) {
+		$t.replaceWith('&#60div class="alert alert-success"&#62>Message ok&#60/div&#62>');
+	}else{
+		$t.prepend('&#60div class="alert alert-danger"&#62>Pas ok&#60/div&#62>')
+});
+});</code></pre>
+									
 							</div>
 						</div>
 					</div>
@@ -1956,7 +1944,7 @@ $("#police").text(police);</code></pre>
 									</ol>
 									<span class="mx-1">Aide: Votre formulaire est composé d'un champs pour la saisie du nom et prénom et d'un bouton pour valider.</span><br>
 									<pre class="mb_0 mx-2"><code class="language-markup">​&#60;form id="monFormulaire" action="traitement.php" method="post"&#62;
-​   &#60;input type="text" required placeholder="Nom et Prénom"&#62;
+​    &#60;input type="text" required placeholder="Nom et Prénom"&#62;
 	&#60;button&#62;Je valide&#60;/button&#62;
 &#60;/form&#62;</code></pre>
 									<span class="mx-1">Astuce : Pour stopper la propagation d'un script on peut utiliser <b>e.preventDefault();</b></span><br>
@@ -2014,14 +2002,14 @@ $("#monFormulaire").submit(function(e) {
 									</ol>
 								
 									<pre class="mb_0 mx-2"><code class="language-js">&#60;form id="monFormulaire" action="traitement.php" method="post"&#62;
-&#60;fieldset&#62;
-	&#60;input type="text" id="fullName" placeholder="Nom et prénom" name="fullName"&#62;
-	&#60;input type="email" id="email" placeholder="E-mail" name="email"&#62;
-	&#60;input type="tel" id="tel" placeholder="Téléphone" name="tel"&#62;
-	&#60;input type="text" id="sujet" placeholder="Sujet" name="sujet"&#62;
-	&#60;textarea name="message" id="message" cols="30" row no-gutters="10"&#62;&#60;/textarea&#62;
-	&#60;button type="submit">Envoyer ma demande&#60;/button&#62;
-&#60;/fieldset&#62;
+	&#60;fieldset&#62;
+		&#60;input type="text" id="fullName" placeholder="Nom et prénom" name="fullName"&#62;
+		&#60;input type="email" id="email" placeholder="E-mail" name="email"&#62;
+		&#60;input type="tel" id="tel" placeholder="Téléphone" name="tel"&#62;
+		&#60;input type="text" id="sujet" placeholder="Sujet" name="sujet"&#62;
+		&#60;textarea name="message" id="message" cols="30" row no-gutters="10"&#62;&#60;/textarea&#62;
+		&#60;button type="submit">Envoyer ma demande&#60;/button&#62;
+	&#60;/fieldset&#62;
 &#60;/form&#62;</code></pre><br>
 
 									<span class="titre mx-3">SOLUTION EXERCICE</span><br>
@@ -2244,7 +2232,7 @@ $(function() {
 											<li>On ajoute le contact dans le tableau JS et html</li>
 											<li>Cas particulier : on vérifie si le contact existe déjà dans la liste de contacts</li>
 											<span class="mx-4">si déjà présent, on ne l'ajoute pas et on renvoie une alerte à l'utilisateur</span>
-											<li>On ajoute une fonction pour réinitialiser le formulaire qu'on appellera dans les cas suivants :</li>
+											<li>On ajoute une fonction pour réinitialiser le for qu'on appellera dans les cas suivants :</li>
 											<ul>
 												<li>soumission de formulaire ok</li>
 												<li>contact déjà présent</li>
@@ -2411,7 +2399,7 @@ $(function() {
 						<div id="collapse30" class="collapse" aria-labelledby="js29"
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
-								<span class="ml-3"><i class="fas fa-share fa-sm"></i>On crée une Class avec des paramètres</span><br>
+								<span class="ml-3 mt-3"><i class="fas fa-share fa-sm"></i>On crée une Class avec des paramètres</span><br>
 								<pre class="mb_0 mx-2"><code class="language-js">let Animal = function(nom, proprietaire, type){  
 	// This fait référence à l'instance de l'animal en cours
 	// L'objet Animal aura donc 3 propriétés
@@ -2525,7 +2513,7 @@ let marker2 = L.marker([44.801911, -0.585159]).addTo(map);</code></pre>
 							<div class="card-body-resp">
 								<span class="mx-2"><i class="fas fa-sign-in-alt fa-sm"></i> Créer un diaporama de 350px/280px</span><br>
 								<span class="mx-2"><i class="fas fa-sign-in-alt fa-sm"></i> Animer le diaporama que lorsque je clique sur les fleches next et prev</span>
-								<pre class="mb_0 mx-2"><code class="language-html">​ ​&#60;div class="new-diaporama pad w-800"&#62;
+								<pre class="mb_0 mx-2"><code class="language-html">​ &#60;div class="new-diaporama pad w-800"&#62;
 	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
 	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
 	&#60;div&#62;&#60;img src="https://placekitten.com/350/280" alt=""&#62;&#60;/div&#62;
@@ -2741,7 +2729,7 @@ setInterval(projets, 10000);</code></pre>
 							data-parent="#accordion-javascript">
 							<div class="card-body-resp">
 								<span class="mx-2"><b>Enoncé exercice</b></span><br>
-								<ol class="mx-1 pt-1 mb_0">
+								<ol class="mx-1 pt-1 mb-3">
 									<li>A partir du tableau suivant, vous devez injecter dans le DOM un tableau HTML</li>
 									<li>En haut de page de votre document, vous créez deux boutons</li>
 									<li>Un bouton pour ajouter un jeu permettant à l'utilisateur de rentrer le nom du jeu, la plateforme et la date de sortie</li>
